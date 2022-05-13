@@ -1,6 +1,7 @@
 import React from "react";
 import Star from "../../svg/Star.svg";
 import openInNewTab from "../../openInNewTab";
+import './index.scss';
 
 export default function Footer() {
   return (
@@ -12,13 +13,11 @@ export default function Footer() {
         <img src={Star} alt="Start" />
       </div>
       <div className="right">
-        <ul>
-          <li>
-            <p onClick={() => openInNewTab("https://github.com/GabrielBG0")} className="link">GitHub</p>
-            <p onClick={() => openInNewTab("https://www.linkedin.com/in/gabrielbgutierrez/")} className="link">LinkedIn</p>
-            <a href="mailto: gabriel.bgs00@gmail.com" className="link">Email</a>
-          </li>
-        </ul>
+        <div className="links">
+          <div><p onClick={() => openInNewTab("https://github.com/GabrielBG0")} className="link">GitHub</p></div>
+          <div><p onClick={() => openInNewTab("https://www.linkedin.com/in/gabrielbgutierrez/")} className="link">LinkedIn</p></div>
+          <div><a href="mailto: gabriel.bgs00@gmail.com" className="link">Email</a></div>
+        </div>
       </div>
     </footer>
   )

@@ -179,9 +179,36 @@
       }
   }
 
+  a {
+    display:flex;
+    justify-content: flex-end;
+  }
+
   .right{
-    margin-left: 5em;
+    margin-left: 20em;
     margin-top: 1em;
     max-width: 700px;
+  }
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+
+  .like {
+    font-family: 'Roboto';
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom:0.2em;
+  }
+
+  .hire {
+    font-family: 'poppins';
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 1em;
   }
 }

@@ -102,7 +102,7 @@ export default function Home() {
       </section>
       <div className="action">
         <p className="like">Like What Your See?</p>
-        <p className="hire"><u>Hire Me!</u></p>
+        <p className="hire"><u>Contact Me!</u></p>
       </div>
     </>
   );

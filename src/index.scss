@@ -12,7 +12,8 @@
 body {
   font: 400 14px "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 input,
