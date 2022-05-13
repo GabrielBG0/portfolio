@@ -1,24 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import './index.scss';
 
 export default function Header() {
   return (
     <nav className="header">
       <div className="left">
         <Link to="/">
-          <h1>Gabriel B Gutierrez</h1>
+          <h1>Gabriel Gutierrez</h1>
         </Link>
         <div className="nav-elements">
-          <p>My Skills</p>
-          <p>My Work</p>
-          <p>Hire Me</p>
+          <div>
+            <p>My Skills</p>
+          </div>
+          <div>
+            <p>My Work</p>
+          </div>
+          <div>
+            <p>About Me</p>
+          </div>
         </div>
       </div>
       <div className="right">
-        <FaGithub />
-        <FaLinkedin />
-        <FaEnvelope />
+        <div className="social-media">
+          <FaGithub className="icon" />
+        </div>
+        <div className="social-media">
+          <FaLinkedin className="icon" />
+        </div>
+        <div className="social-media">
+          <FaEnvelope className="icon" />
+        </div>
       </div>
     </nav>
   )

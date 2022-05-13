@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  display: grid;
+    grid-template-columns: 66% auto;
+  
+
+  .left {
+    padding: 2em 4em;
+    background: #18181B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-family: 'poppins';
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-elements{
+      padding-left: 2em;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #18181B;
+
+    .social-media {
+      margin-left: 2.5em;
+      cursor: pointer;
+
+      .icon {
+        font-size: 2em;
+      }
+    }
+  }
+}
