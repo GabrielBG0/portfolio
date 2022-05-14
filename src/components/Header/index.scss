@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   display: grid;
-    grid-template-columns: 66% auto;
+  grid-template-columns: 66% auto;
   
 
   .left {
@@ -16,6 +16,7 @@
     h1 {
       font-family: 'poppins';
       font-weight: bold;
+      font-size: 1.5em;
       color: white;
     }
 
@@ -39,7 +40,7 @@
     color: #18181B;
 
     .social-media {
-      margin-left: 2.5em;
+      margin-left: 4em;
       cursor: pointer;
 
       .icon {
