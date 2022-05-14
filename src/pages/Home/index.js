@@ -17,7 +17,9 @@ export default function Home() {
           </div>
           <img className="scroll" src={Scroll} alt='scroll' />
         </div>
-        <img className="right" src={StarVertical} alt="Star" />
+        <div className="right">
+          <img src={StarVertical} alt="Star" />
+        </div>
       </div>
       <section className="about">
         <div className="left">
