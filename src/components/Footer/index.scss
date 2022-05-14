@@ -1,48 +1,106 @@
-.footer{
-  background: #18181b;
-  color: white;
-  padding: 1.5em 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import "../../mixins";
 
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-
-  .left{
+@include desktop() {
+  .footer {
+    background: #18181b;
+    color: white;
+    padding: 1.5em 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-  }
+    justify-content: center;
 
-  .mid{
-    width: 100%;
-    display: grid;
-    place-content: center;
-  }
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
 
-  .right {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
 
-    .links{
+    .mid {
+      width: 100%;
+      display: grid;
+      place-content: center;
+    }
+
+    .right {
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-right: 4em;
+      justify-content: flex-start;
 
-      p {
-        cursor: pointer;
+      .links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 4em;
+
+        p {
+          cursor: pointer;
+        }
+      }
+
+      a {
+        color: white;
       }
     }
-    
-    a{
-      color: white;
+  }
+}
+
+@include tablet() {
+  .footer {
+    background: #18181b;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
     }
-  } 
+
+    .mid {
+      width: 100%;
+      display: grid;
+      place-content: center;
+    }
+
+    .right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 4em;
+
+        p {
+          cursor: pointer;
+        }
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@include phone() {
 }

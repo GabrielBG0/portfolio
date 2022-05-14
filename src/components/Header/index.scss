@@ -1,53 +1,132 @@
-.header {
-  display: flex;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 66% auto;
-  
+@import "../../mixins";
 
-  .left {
-    padding: 2em 4em;
-    background: #18181B;
-    color: white;
+@include desktop() {
+  .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 66% auto;
 
-    h1 {
-      font-family: 'poppins';
-      font-weight: bold;
-      font-size: 1.5em;
+    .left {
+      padding: 2em 4em;
+      background: #18181b;
       color: white;
-    }
-
-    .nav-elements{
-      padding-left: 2em;
-      width: 70%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
-      p {
+      h1 {
+        font-family: "poppins";
+        font-weight: bold;
+        font-size: 1.5em;
+        color: white;
+      }
+
+      .nav-elements {
+        padding-left: 2em;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        p {
+          cursor: pointer;
+          font-size: 1.2em;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #18181b;
+
+      .social-media {
+        margin-left: 4em;
         cursor: pointer;
-        font-size: 1.2em;
-        font-weight: 400;
+
+        .icon {
+          font-size: 2em;
+        }
       }
     }
   }
+}
 
-  .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #18181B;
+@include tablet() {
+  .header {
+    background: #18181b;
 
-    .social-media {
-      margin-left: 4em;
-      cursor: pointer;
+    .left {
+      padding: 2em 3em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
 
-      .icon {
-        font-size: 2em;
+      h1 {
+        font-family: "poppins";
+        font-weight: bold;
+        font-size: 1.5em;
+        color: white;
       }
+
+      .nav-elements {
+        padding-left: 2em;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        p {
+          cursor: pointer;
+          font-size: 1.2em;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .right {
+      display: none;
+    }
+  }
+}
+
+@include phone() {
+  .header {
+    background: #18181b;
+    color: white;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 2em;
+
+      h1 {
+        color: white;
+        text-align: left;
+        font-family: "poppins";
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+
+      .nav-elements {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        p {
+          cursor: pointer;
+          font-size: 1em;
+          font-weight: 400;
+        }
+      }
+    }
+    .right {
+      display: none;
     }
   }
 }

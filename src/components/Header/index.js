@@ -18,7 +18,7 @@ export default function Header() {
             <p>My Work</p>
           </div>
           <div>
-            <p>About Me</p>
+            <p>Hire Me</p>
           </div>
         </div>
       </div>
