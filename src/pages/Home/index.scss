@@ -2,7 +2,7 @@
 
 @include desktop() {
   .hero {
-    height: 90vh;
+    height: 91vh;
     display: grid;
     grid-template-columns: 66% auto;
 
@@ -18,7 +18,10 @@
       color: white;
 
       h1 {
-        font-size: 4em;
+        font-size: 5em;
+        @media (max-width: 1570px) {
+          font-size: 4em;
+        }
         @media (max-width: 1325px) {
           font-size: 3.5em;
         }
@@ -32,7 +35,13 @@
       }
 
       .meet {
-        font-size: 2em;
+        font-size: 3.5em;
+        @media (max-width: 1325px) {
+          font-size: 3em;
+        }
+        @media (max-width: 1200px) {
+          font-size: 2em;
+        }
         font-weight: 400;
         font-family: "Roboto";
         margin-bottom: 1em;
@@ -41,7 +50,9 @@
         justify-content: center;
 
         .arrow {
-          font-size: 40px;
+          display: grid;
+          place-content: center;
+          font-size: 50px;
           margin-left: 0.6em;
         }
       }
@@ -229,7 +240,7 @@
 
 @include tablet() {
   .hero {
-    height: 90vh;
+    height: 91vh;
     background: #212125;
     color: white;
     display: grid;
@@ -274,7 +285,7 @@
   }
 
   .about {
-    height: 90vh;
+    height: 91vh;
     display: grid;
     grid-template-columns: 66% auto;
 

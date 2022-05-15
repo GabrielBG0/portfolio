@@ -3,25 +3,47 @@ import { FaAngleDown, FaCode, FaRobot, FaChartBar } from "react-icons/fa";
 import Scroll from "../../svg/Scroll.svg";
 import StarVertical from "../../svg/Star-Vertical370.svg";
 import charts from "../../svg/charts.svg";
+import { motion } from "framer-motion";
 import './index.scss';
 
 export default function Home() {
+
+  const starVariants = {
+    hidden: { opacity: 0, y: -100 },
+    visible: { opacity: 1, y: 0 },
+  }
+
+  const scrollVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const meetVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  function isDescktop() {
+    return window.innerWidth > 1099;
+  }
+
+
   return (
     <>
       <div className="hero">
         <div className="left">
-          <h1>Software Engineering,<br />Machine Learning and<br />Data Science</h1>
-          <div className="meet">
+          <motion.h1 initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1.5 }}>Software Engineering,<br />Machine Learning and<br />Data Science</motion.h1>
+          <motion.div initial='hidden' animate='visible' variants={isDescktop() ? scrollVariants : meetVariants} transition={{ duration: 1.5 }} className="meet">
             <p>Meet Gabriel</p>
-            <FaAngleDown className="arrow" />
-          </div>
-          <img className="scroll" src={Scroll} alt='scroll' />
+            <motion.span animate={{ y: [0, -10, 0, -10, 0] }} transition={{ delay: 1.55 }} className="arrow"><FaAngleDown /></motion.span>
+          </motion.div>
+          <motion.img initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1.5 }} className="scroll" src={Scroll} alt='scroll' />
         </div>
-        <div className="right">
+        <motion.div initial='hidden' animate='visible' variants={starVariants} transition={{ duration: 1.5 }} className="right">
           <img src={StarVertical} alt="Star" />
-        </div>
+        </motion.div>
       </div>
-      <section className="about">
+      <section id="about" className="about">
         <div className="left">
           <div className="inner">
             <p className='subtitle'>
@@ -39,7 +61,7 @@ export default function Home() {
           <h2 className="title">My Interests</h2>
         </div>
       </section>
-      <section className="skills">
+      <section id="skills" className="skills">
         <div className="skills-container">
           <ul>
             <li>
@@ -66,7 +88,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section className="projects">
+      <section id="projects" className="projects">
         <div className="projects-container">
           <div className="left">
             <div className="inner">
@@ -102,7 +124,7 @@ export default function Home() {
           <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
         </div>
       </section>
-      <div className="action">
+      <div id="hire" className="action">
         <p className="like">Like What Your See?</p>
         <p className="hire"><u>Contact Me!</u></p>
       </div>

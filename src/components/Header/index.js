@@ -4,6 +4,10 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import './index.scss';
 
 export default function Header() {
+  function scrollToId(id) {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <nav className="header">
       <div className="left">
@@ -12,13 +16,13 @@ export default function Header() {
         </Link>
         <div className="nav-elements">
           <div>
-            <p>My Skills</p>
+            <button onClick={() => scrollToId('skills')}>My Skills</button>
           </div>
           <div>
-            <p>My Work</p>
+            <button onClick={() => scrollToId('projects')}>My Work</button>
           </div>
           <div>
-            <p>Hire Me</p>
+            <button onClick={() => scrollToId('hire')}>Hire Me</button>
           </div>
         </div>
       </div>
