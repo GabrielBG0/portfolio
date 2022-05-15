@@ -99,7 +99,7 @@ export default function Home() {
       <section id="skills" className="skills">
         <div className="skills-container">
           <Parallax
-            translateY={['-110px', '0px']}
+            translateY={['-100px', '0px']}
             easing="easeInQuad"
             startScroll={900}
             endScroll={1200}>
@@ -148,7 +148,7 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <Parallax startScroll={2200}
-              endScroll={3000} speed={-5} className="inner">
+              endScroll={2600} speed={-5} className="inner">
               <p className="subtitle">Data Science</p>
               <p className="title">Australian Fires 🔥</p>
               <p className="desc">Software Engineering</p>
