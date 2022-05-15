@@ -118,7 +118,7 @@
     .left {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
     }
 
@@ -130,14 +130,14 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       margin-left: 3em;
 
       .links {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-right: 2em;
 
         p {

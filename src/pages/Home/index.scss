@@ -1,5 +1,62 @@
 @import "../../mixins";
 
+.contact {
+  width: 70vw;
+  padding: 3em 4em;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      margin-bottom: 1rem;
+      width: 100%;
+      height: 3em;
+      border-radius: 0.5em;
+      border: 1px solid #212125;
+      color: #18181b;
+      padding: 1em 2em;
+    }
+
+    textarea {
+      margin-bottom: 1rem;
+      width: 100%;
+      height: 10em;
+      border-radius: 0.5em;
+      border: 1px solid #212125;
+      color: #18181b;
+      padding: 2em;
+      resize: vertical;
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    button {
+      margin-top: 0.5rem;
+      padding: 0 2em;
+      @media screen and (max-width: 850px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      height: 3em;
+      border-radius: 0.5em;
+      border: 1px solid #212125;
+      color: white;
+      background-color: #18181b;
+      font-family: "Roboto";
+      font-size: 1.5em;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      cursor: pointer;
+    }
+  }
+}
+
 @include desktop() {
   .hero {
     height: 91vh;
@@ -16,24 +73,28 @@
       justify-content: center;
       background: #212125;
       color: white;
-
-      h1 {
-        font-size: 5em;
-        @media (max-width: 1570px) {
-          font-size: 4em;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h1 {
+          font-size: 5em;
+          @media (max-width: 1570px) {
+            font-size: 4em;
+          }
+          @media (max-width: 1325px) {
+            font-size: 3.5em;
+          }
+          @media (max-width: 1200px) {
+            font-size: 3em;
+          }
+          font-weight: bold;
+          font-family: "poppins";
+          margin-bottom: 0.6em;
+          line-height: 1.2em;
         }
-        @media (max-width: 1325px) {
-          font-size: 3.5em;
-        }
-        @media (max-width: 1200px) {
-          font-size: 3em;
-        }
-        font-weight: bold;
-        font-family: "poppins";
-        margin-bottom: 0.6em;
-        line-height: 1.2em;
       }
-
       .meet {
         font-size: 3.5em;
         @media (max-width: 1325px) {
@@ -46,8 +107,10 @@
         font-family: "Roboto";
         margin-bottom: 1em;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        width: 100%;
 
         .arrow {
           display: grid;
@@ -144,6 +207,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border: #18181b solid 1px;
 
         .icon-container {
           font-size: 7em;
@@ -233,7 +297,6 @@
       font-family: "poppins";
       font-size: 4em;
       font-weight: bold;
-      margin-bottom: 1em;
     }
   }
 }
@@ -447,7 +510,6 @@
       font-family: "poppins";
       font-size: 4em;
       font-weight: bold;
-      margin-bottom: 1em;
     }
   }
 }
@@ -644,7 +706,7 @@
 
     .right {
       margin-top: 1em;
-      max-width: 300px;
+      max-width: 400px;
     }
   }
 
@@ -666,7 +728,6 @@
       font-family: "poppins";
       font-size: 3em;
       font-weight: bold;
-      margin-bottom: 1em;
     }
   }
 }
