@@ -4,6 +4,10 @@
   width: 70vw;
   padding: 3em 4em;
 
+  @media screen and (max-width: 850px) {
+    width: 100vw;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -706,7 +710,7 @@
 
     .right {
       margin-top: 1em;
-      max-width: 400px;
+      max-width: 250px;
     }
   }
 

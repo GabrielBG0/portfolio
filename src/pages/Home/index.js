@@ -55,7 +55,7 @@ export default function Home() {
     <>
       <div className="hero">
         <div className="left">
-          <Parallax className={{ marginTop: '3em' }} speed={-10}>
+          <Parallax disabled={isDescktop() ? false : true} className={{ marginTop: '3em' }} speed={-10}>
             <motion.h1 initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1.5 }}>Software Engineering,<br />Machine Learning and<br />Data Science</motion.h1>
             <motion.div initial='hidden' animate='visible' variants={isDescktop() ? scrollVariants : meetVariants} transition={{ duration: 1.5 }} className="meet">
               <p>Meet Gabriel</p>
@@ -72,7 +72,7 @@ export default function Home() {
       <section id="about" className="about">
         <div className="left">
 
-          <Parallax translateX={['-500px', '0px']}
+          <Parallax disabled={isDescktop() ? false : true} translateX={['-500px', '0px']}
             easing="easeInQuad"
             startScroll={100}
             endScroll={800}
@@ -88,7 +88,7 @@ export default function Home() {
             </p>
           </Parallax>
         </div>
-        <Parallax translateX={['500px', '0px']}
+        <Parallax disabled={isDescktop() ? false : true} translateX={['500px', '0px']}
           easing="easeInQuad"
           startScroll={100}
           endScroll={800}
@@ -98,8 +98,9 @@ export default function Home() {
       </section>
       <section id="skills" className="skills">
         <div className="skills-container">
-          <Parallax
+          <Parallax disabled={isDescktop() ? false : true}
             translateY={['-100px', '0px']}
+            opacity={[0, 1]}
             easing="easeInQuad"
             startScroll={900}
             endScroll={1200}>
@@ -134,8 +135,8 @@ export default function Home() {
       <section id="projects" className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax startScroll={1700}
-              endScroll={2000} speed={-5} className="inner">
+            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={1700}
+              endScroll={2000} className="inner">
               <p className="subtitle">Software Engineering</p>
               <p className="title">CookBook 🍜</p>
               <p className="desc">Software Engineering</p>
@@ -147,8 +148,8 @@ export default function Home() {
       <section className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax startScroll={2200}
-              endScroll={2600} speed={-5} className="inner">
+            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2300}
+              endScroll={2600} className="inner">
               <p className="subtitle">Data Science</p>
               <p className="title">Australian Fires 🔥</p>
               <p className="desc">Software Engineering</p>
@@ -160,8 +161,8 @@ export default function Home() {
       <section className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax startScroll={2000}
-              endScroll={3200} speed={-5} className="inner">
+            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2900}
+              endScroll={3200} className="inner">
               <p className="subtitle">Machine Learning</p>
               <p className="title">Smart Truncation Tool ✂</p>
               <p className="desc">Software Engineering</p>
