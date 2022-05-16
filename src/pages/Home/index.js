@@ -103,7 +103,7 @@ export default function Home() {
             opacity={[0, 1]}
             easing="easeInQuad"
             startScroll={900}
-            endScroll={1200}>
+            endScroll={1500}>
             <ul>
               <li>
 
@@ -182,7 +182,7 @@ export default function Home() {
             <textarea value={message} onChange={(e) => { setMessage(e.target.value) }} name='message' placeholder="Message*"></textarea>
           </form>
           <div className="button-container">
-            <button className={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'send'}</button>
+            <button className={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'Send'}</button>
           </div>
         </div>
       </div>
