@@ -84,7 +84,7 @@ export default function Home() {
               Hi, I'm Gabriel 🙋‍♂️
             </p>
             <p className="text">
-              I'm a software engineer and machine learning enthusiast.
+              I'm a junior Software Engineer and Machine Learning enthusiast. I’m currently based in Brazil, but looking for international opportunities too. My fields of interest are Web Development, Machine Learning and, most recently, Data Science.<br /> I’m currently researching fake news detection with NLP and Deep Learning algorithms like BERT within my univercity, UFMS.
             </p>
           </Parallax>
         </div>
@@ -93,7 +93,26 @@ export default function Home() {
           startScroll={100}
           endScroll={800}
           className="right">
-          <h2 className="title">My Interests</h2>
+          <h2 className="title">My Tool Set</h2>
+          <div className="interests">
+            <ul>
+              <li>JavaScrip</li>
+              <li>Python</li>
+              <li>Rust</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>PyTorch</li>
+              <li>Hugging Face</li>
+              <li>Scikit Learn</li>
+              <li>TensorFlow</li>
+              <li>Pandas</li>
+              <li>Seaborn</li>
+              <li>React</li>
+              <li>SASS</li>
+              <li>NodeJs</li>
+            </ul>
+          </div>
         </Parallax>
       </section>
       <section id="skills" className="skills">
