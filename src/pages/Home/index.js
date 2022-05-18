@@ -75,7 +75,7 @@ export default function Home() {
           <Parallax disabled={isDescktop() ? false : true} translateX={['-500px', '0px']}
             easing="easeInQuad"
             startScroll={100}
-            endScroll={800}
+            endScroll={400}
           >
             <p className='subtitle'>
               about
@@ -91,7 +91,7 @@ export default function Home() {
         <Parallax disabled={isDescktop() ? false : true} translateX={['500px', '0px']}
           easing="easeInQuad"
           startScroll={100}
-          endScroll={800}
+          endScroll={400}
           className="right">
           <h2 className="title">My Tool Set</h2>
           <div className="interests">
@@ -122,7 +122,7 @@ export default function Home() {
             opacity={[0, 1]}
             easing="easeInQuad"
             startScroll={900}
-            endScroll={1500}>
+            endScroll={1100}>
             <ul>
               <li>
 
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={1700}
-              endScroll={2000} className="inner">
+              endScroll={1800} className="inner">
               <p className="subtitle">Software Engineering</p>
               <p className="title">CookBook 🍜</p>
               <p className="desc">Software Engineering</p>
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2300}
-              endScroll={2600} className="inner">
+              endScroll={2400} className="inner">
               <p className="subtitle">Data Science</p>
               <p className="title">Australian Fires 🔥</p>
               <p className="desc">Software Engineering</p>
@@ -181,7 +181,7 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2900}
-              endScroll={3200} className="inner">
+              endScroll={3000} className="inner">
               <p className="subtitle">Machine Learning</p>
               <p className="title">Smart Truncation Tool ✂</p>
               <p className="desc">Software Engineering</p>
