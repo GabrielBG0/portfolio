@@ -92,28 +92,26 @@ export default function Home() {
           easing="easeInQuad"
           startScroll={100}
           endScroll={400}
-        >
-          <div className="right">
-            <h2 className="title">My Tool Set</h2>
-            <div className="interests">
-              <ul>
-                <li>JavaScrip</li>
-                <li>Python</li>
-                <li>Rust</li>
-                <li>C#</li>
-                <li>Java</li>
-                <li>SQL</li>
-                <li>PyTorch</li>
-                <li>Hugging Face</li>
-                <li>Scikit Learn</li>
-                <li>TensorFlow</li>
-                <li>Pandas</li>
-                <li>Seaborn</li>
-                <li>React</li>
-                <li>SASS</li>
-                <li>NodeJs</li>
-              </ul>
-            </div>
+          className="right">
+          <h2 className="title">My Tool Set</h2>
+          <div className="interests">
+            <ul>
+              <li>JavaScrip</li>
+              <li>Python</li>
+              <li>Rust</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>PyTorch</li>
+              <li>Hugging Face</li>
+              <li>Scikit Learn</li>
+              <li>TensorFlow</li>
+              <li>Pandas</li>
+              <li>Seaborn</li>
+              <li>React</li>
+              <li>SASS</li>
+              <li>NodeJs</li>
+            </ul>
           </div>
         </Parallax>
       </section>
@@ -156,12 +154,11 @@ export default function Home() {
       <section id="projects" className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={1700}
-              endScroll={1800} className="inner">
+            <div className="inner">
               <p className="subtitle">Software Engineering</p>
               <p className="title">CookBook 🍜</p>
               <p className="desc">Software Engineering</p>
-            </Parallax>
+            </div>
           </div>
           <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
         </div>
@@ -169,12 +166,11 @@ export default function Home() {
       <section className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2300}
-              endScroll={2400} className="inner">
+            <div className="inner">
               <p className="subtitle">Data Science</p>
               <p className="title">Australian Fires 🔥</p>
               <p className="desc">Software Engineering</p>
-            </Parallax>
+            </div>
           </div>
           <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
         </div>
@@ -182,12 +178,11 @@ export default function Home() {
       <section className="projects">
         <div className="projects-container">
           <div className="left">
-            <Parallax disabled={isDescktop() ? false : true} translateY={['-100px', '0px']} startScroll={2900}
-              endScroll={3000} className="inner">
+            <div className="inner">
               <p className="subtitle">Machine Learning</p>
               <p className="title">Smart Truncation Tool ✂</p>
               <p className="desc">Software Engineering</p>
-            </Parallax>
+            </div>
           </div>
           <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
         </div>
