@@ -92,26 +92,28 @@ export default function Home() {
           easing="easeInQuad"
           startScroll={100}
           endScroll={400}
-          className="right">
-          <h2 className="title">My Tool Set</h2>
-          <div className="interests">
-            <ul>
-              <li>JavaScrip</li>
-              <li>Python</li>
-              <li>Rust</li>
-              <li>C#</li>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>PyTorch</li>
-              <li>Hugging Face</li>
-              <li>Scikit Learn</li>
-              <li>TensorFlow</li>
-              <li>Pandas</li>
-              <li>Seaborn</li>
-              <li>React</li>
-              <li>SASS</li>
-              <li>NodeJs</li>
-            </ul>
+        >
+          <div className="right">
+            <h2 className="title">My Tool Set</h2>
+            <div className="interests">
+              <ul>
+                <li>JavaScrip</li>
+                <li>Python</li>
+                <li>Rust</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>PyTorch</li>
+                <li>Hugging Face</li>
+                <li>Scikit Learn</li>
+                <li>TensorFlow</li>
+                <li>Pandas</li>
+                <li>Seaborn</li>
+                <li>React</li>
+                <li>SASS</li>
+                <li>NodeJs</li>
+              </ul>
+            </div>
           </div>
         </Parallax>
       </section>
