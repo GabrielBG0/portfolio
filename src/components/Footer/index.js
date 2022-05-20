@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="links">
           <div><p onClick={() => openInNewTab("https://github.com/GabrielBG0")} className="link">GitHub</p></div>
           <div><p onClick={() => openInNewTab("https://www.linkedin.com/in/gabrielbgutierrez/")} className="link">LinkedIn</p></div>
-          <div><a href="mailto: gabriel.bgs00@gmail.com" className="link">Email</a></div>
+          <div><p onClick={() => openInNewTab("https://www.kaggle.com/gabrielbgutierrez")} className="link">Kaggle</p></div>
         </div>
       </div>
     </footer>

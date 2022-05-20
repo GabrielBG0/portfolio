@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaKaggle } from "react-icons/fa";
+import openInNewTab from "../../openInNewTab";
+
 import './index.scss';
 
 export default function Header() {
@@ -27,14 +29,14 @@ export default function Header() {
         </div>
       </div>
       <div className="right">
-        <div className="social-media">
+        <div onClick={() => openInNewTab("https://github.com/GabrielBG0")} className="social-media">
           <FaGithub className="icon" />
         </div>
-        <div className="social-media">
+        <div onClick={() => openInNewTab("https://www.linkedin.com/in/gabrielbgutierrez/")} className="social-media">
           <FaLinkedin className="icon" />
         </div>
-        <div className="social-media">
-          <FaEnvelope className="icon" />
+        <div onClick={() => openInNewTab("https://www.kaggle.com/gabrielbgutierrez")} className="social-media">
+          <FaKaggle className="icon" />
         </div>
       </div>
     </nav>

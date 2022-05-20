@@ -56,12 +56,12 @@ export default function Home() {
       <div className="hero">
         <div className="left">
           <Parallax disabled={isDescktop() ? false : true} className={{ marginTop: '3em' }} speed={-10}>
-            <motion.h1 initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1.5 }}>Software Engineering,<br />Machine Learning and<br />Data Science</motion.h1>
-            <motion.div initial='hidden' animate='visible' variants={isDescktop() ? scrollVariants : meetVariants} transition={{ duration: 1.5 }} className="meet">
+            <motion.h1 initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1 }}>Software Engineering,<br />Machine Learning and<br />Data Science</motion.h1>
+            <motion.div initial='hidden' animate='visible' variants={isDescktop() ? scrollVariants : meetVariants} transition={{ duration: 1 }} className="meet">
               <p>Meet Gabriel</p>
-              <motion.span animate={{ y: [0, -10, 0, -10, 0] }} transition={{ delay: 1.55 }} className="arrow"><FaAngleDown /></motion.span>
+              <motion.span animate={{ y: [0, -10, 0, -10, 0] }} transition={{ delay: 1.05 }} className="arrow"><FaAngleDown /></motion.span>
             </motion.div>
-            <motion.img initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1.5 }} className="scroll" src={Scroll} alt='scroll' />
+            <motion.img initial='hidden' animate='visible' variants={scrollVariants} transition={{ duration: 1 }} className="scroll" src={Scroll} alt='scroll' />
           </Parallax>
         </div>
         <motion.div initial='hidden' animate='visible' variants={starVariants} transition={{ duration: 1.5 }} className="right">
@@ -130,7 +130,9 @@ export default function Home() {
                   <FaCode />
                 </div>
                 <p className="title">Software<br />Engineering</p>
-                <p className="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="desc">Web Development, System Architecture and Back and Front End Development
+                  are some of the skills I developed in the area of Software Engineering,
+                  with a greater focus on web dev.</p>
 
               </li>
               <li>
@@ -138,14 +140,18 @@ export default function Home() {
                   <FaRobot />
                 </div>
                 <p className="title">Machine<br />Learning</p>
-                <p className="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="desc">Machine learning is the field where I have the most experience in.
+                  As a junior researcher at the UFMS’ Artificial Intelligence Lab I’ve researched fake news
+                  detection and ways to improve BERT’s text classification.</p>
               </li>
               <li>
                 <div className="icon-container">
                   <FaChartBar />
                 </div>
                 <p className="title">Data<br />Science</p>
-                <p className="desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="desc">Data Science is my newest passion. Prediction, Data Analysis and Data Warehousing are some of the things I’m Learning to do.
+                  As my newest interest field, Data Science has interested me a lot,
+                  and it has been very fun to learn about it.</p>
               </li>
             </ul>
           </Parallax>
@@ -188,7 +194,7 @@ export default function Home() {
         </div>
       </section>
       <div id="hire" className="action">
-        <p className="like">Like What Your See?</p>
+        <p className="like">Like What You See?</p>
         <p className="hire"><u>Contact Me!</u></p>
         <div className="contact">
           <form onSubmit={handleSubmit}>
