@@ -3,6 +3,8 @@ import { FaAngleDown, FaCode, FaRobot, FaChartBar, FaCheck } from "react-icons/f
 import Scroll from "../../svg/Scroll.svg";
 import StarVertical from "../../svg/Star-Vertical370.svg";
 import charts from "../../svg/charts.svg";
+import cookBook from "../../svg/CookBook.svg";
+import ITT from "../../svg/ITT.svg";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import * as emailjs from "emailjs-com";
@@ -166,7 +168,7 @@ export default function Home() {
               <p className="desc">Software Engineering</p>
             </div>
           </div>
-          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
+          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={cookBook} alt='charts' /></a>
         </div>
       </section>
       <section className="projects">
@@ -190,7 +192,7 @@ export default function Home() {
               <p className="desc">Software Engineering</p>
             </div>
           </div>
-          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
+          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={ITT} alt='charts' /></a>
         </div>
       </section>
       <div id="hire" className="action">
