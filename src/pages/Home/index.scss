@@ -251,8 +251,9 @@
           margin-top: 1em;
           text-align: center;
           font-family: "Roboto";
-          font-size: 1.2em;
-          font-weight: 500;
+          font-size: 1.3em;
+          font-weight: normal;
+          color: black;
         }
       }
     }
@@ -289,10 +290,12 @@
         font-family: "Roboto";
         line-height: 1.5em;
         margin-bottom: 2em;
+        text-align: justify;
       }
     }
 
-    a {
+    a,
+    span {
       display: flex;
       justify-content: flex-end;
     }
@@ -586,7 +589,6 @@
   }
 
   .about {
-    height: 90vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
 
@@ -724,7 +726,8 @@
       }
     }
 
-    a {
+    a,
+    span {
       display: flex;
       justify-content: center;
     }

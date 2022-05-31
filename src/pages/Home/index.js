@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { FaAngleDown, FaCode, FaRobot, FaChartBar, FaCheck } from "react-icons/fa";
 import Scroll from "../../svg/Scroll.svg";
 import StarVertical from "../../svg/Star-Vertical370.svg";
-import charts from "../../svg/charts.svg";
+import australiaFires from "../../svg/australiaFires.svg";
 import cookBook from "../../svg/CookBook.svg";
 import ITT from "../../svg/ITT.svg";
+import saoPaulo from "../../svg/saoPaulo.svg";
+import SpotifyStats from "../../svg/SpotifyStats.svg";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import * as emailjs from "emailjs-com";
@@ -86,7 +88,10 @@ export default function Home() {
               Hi, I'm Gabriel 🙋‍♂️
             </p>
             <p className="text">
-              I'm a junior Software Engineer and Machine Learning enthusiast. I’m currently based in Brazil, but looking for international opportunities too. My fields of interest are Web Development, Machine Learning and, most recently, Data Science.<br /> I’m currently researching fake news detection with NLP and Deep Learning algorithms like BERT within my univercity, UFMS.
+              I'm a junior Software Engineer and Machine Learning researcher. I’m currently based in Brazil,
+              but looking for international opportunities too. My fields of interest are Web Development,
+              Machine Learning and, most recently, Data Science.<br /> I’m currently researching fake news detection
+              with NLP and Deep Learning algorithms like BERT within my univercity, UFMS.
             </p>
           </Parallax>
         </div>
@@ -152,7 +157,7 @@ export default function Home() {
                 </div>
                 <p className="title">Data<br />Science</p>
                 <p className="desc">Data Science is my newest passion. Prediction, Data Analysis and Data Warehousing are some of the things I’m Learning to do.
-                  As my newest interest field, Data Science has interested me a lot,
+                  As my newest interest field, Data Science has attracted me a lot,
                   and it has been very fun to learn about it.</p>
               </li>
             </ul>
@@ -163,12 +168,16 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <div className="inner">
-              <p className="subtitle">Software Engineering</p>
-              <p className="title">CookBook 🍜</p>
-              <p className="desc">Software Engineering</p>
+              <p className="subtitle">Machine Learning</p>
+              <p className="title">Smart Truncation Tool ✂</p>
+              <p className="desc">Research focused on improving the truncation process needed by some NLP algorithms
+                like BERT. The research is still ongoing so I can not show more details about it.
+              </p>
             </div>
           </div>
-          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={cookBook} alt='charts' /></a>
+          <span style={{ cursor: 'default' }}>
+            <img className="right" src={ITT} alt='ITT Art' />
+          </span>
         </div>
       </section>
       <section className="projects">
@@ -177,22 +186,67 @@ export default function Home() {
             <div className="inner">
               <p className="subtitle">Data Science</p>
               <p className="title">Australian Fires 🔥</p>
-              <p className="desc">Software Engineering</p>
+              <p className="desc">This is an essay for the course on decision support systems.
+                It draws correlations with the weather and the number of fires occurring in Australia and
+                proposes an algorithm capable of predicting the number of fires in an area given historical weather data.
+              </p>
             </div>
           </div>
-          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={charts} alt='charts' /></a>
+          <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf">
+            <img className="right" src={australiaFires} alt='Australian Fires' />
+          </a>
         </div>
       </section>
       <section className="projects">
         <div className="projects-container">
           <div className="left">
             <div className="inner">
-              <p className="subtitle">Machine Learning</p>
-              <p className="title">Smart Truncation Tool ✂</p>
-              <p className="desc">Software Engineering</p>
+              <p className="subtitle">Data Science</p>
+              <p className="title">São Paulo Home Prices 🏠</p>
+              <p className="desc">Project developed in the Data Science course from Alura School of Technology.
+                This article discusses ways to predict the price of homes in São Paulo city using data from the home
+                itself and socioeconomic data from the neighborhood the property is located.
+              </p>
             </div>
           </div>
-          <a href="https://github.com/GabrielBG0/CookBook"> <img className="right" src={ITT} alt='charts' /></a>
+          <a target="_blank" rel="noreferrer noopener" href="https://link.medium.com/PpRKk4O8sqb">
+            <img className="right" src={saoPaulo} alt='São Paulo Home Prices' />
+          </a>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="projects-container">
+          <div className="left">
+            <div className="inner">
+              <p className="subtitle">Software Engineering</p>
+              <p className="title">Spotify Stats 📻</p>
+              <p className="desc">This is a personal project born from my curiosity to
+                know my top artists and songs on Spotify. It shows your top 20 artists and
+                songs on short, medium and long term, your recently played tracks and, on desktop,
+                offers media controls for your Spotify player.
+              </p>
+            </div>
+          </div>
+          <a target="_blank" rel="noreferrer noopener" href="https://spotify-stats-js.vercel.app/">
+            <img className="right" src={SpotifyStats} alt='Spotify Stats' />
+          </a>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="projects-container">
+          <div className="left">
+            <div className="inner">
+              <p className="subtitle">Software Engineering</p>
+              <p className="title">CookBook 🍜</p>
+              <p className="desc">University project for the Web development class.
+                CookBook is a social network where users can share, save and rate recipes and
+                follow their favorite cooking creators.
+              </p>
+            </div>
+          </div>
+          <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/CookBook">
+            <img className="right" src={cookBook} alt='cookBook' />
+          </a>
         </div>
       </section>
       <div id="hire" className="action">
@@ -206,7 +260,7 @@ export default function Home() {
             <textarea value={message} onChange={(e) => { setMessage(e.target.value) }} name='message' placeholder="Message*"></textarea>
           </form>
           <div className="button-container">
-            <button className={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'Send'}</button>
+            <button style={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'Send'}</button>
           </div>
         </div>
       </div>
