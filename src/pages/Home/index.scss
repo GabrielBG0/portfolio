@@ -415,7 +415,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2em 3em;
+      padding: 2em 0;
       text-align: center;
 
       .title {
@@ -424,6 +424,30 @@
         font-family: "poppins";
         margin-bottom: 0.2em;
         line-height: 1.2em;
+      }
+
+      .interests ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1em;
+        text-align: center;
+        color: white;
+        padding: 0 1em;
+        margin-top: 0.5em;
+
+        li {
+          font-size: 1.2em;
+          font-family: "Roboto";
+          line-height: 1.2em;
+          padding: 0.5em 1em;
+          display: grid;
+          place-content: center;
+          border-radius: 0.5em;
+          background: #18181b;
+          height: 100%;
+        }
       }
     }
   }
@@ -508,7 +532,8 @@
       }
     }
 
-    a {
+    a,
+    span {
       display: flex;
       justify-content: flex-end;
     }
@@ -619,6 +644,7 @@
         font-family: "Roboto";
         line-height: 1.5em;
         margin-bottom: 2em;
+        text-align: justify;
       }
     }
 
@@ -636,6 +662,31 @@
         font-family: "poppins";
         margin-bottom: 0.2em;
         line-height: 1.2em;
+      }
+
+      .interests {
+        width: 100%;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, 33%);
+          grid-gap: 1em;
+          text-align: center;
+          color: white;
+          padding: 0 0;
+          margin-top: 0.5em;
+
+          li {
+            font-size: 1.2em;
+            font-family: "Roboto";
+            line-height: 1.2em;
+            padding: 0.5em 1em;
+            display: grid;
+            place-content: center;
+            border-radius: 0.5em;
+            background: #18181b;
+            height: 100%;
+          }
+        }
       }
     }
   }
@@ -678,7 +729,7 @@
 
         .desc {
           margin-top: 1em;
-          text-align: center;
+          text-align: justify;
           font-family: "Roboto";
           font-size: 1.2em;
           font-weight: 500;
@@ -722,6 +773,7 @@
           font-family: "Roboto";
           line-height: 1.5em;
           margin-bottom: 2em;
+          text-align: justify;
         }
       }
     }
@@ -734,7 +786,7 @@
 
     .right {
       margin-top: 1em;
-      max-width: 250px;
+      max-width: 300px;
     }
   }
 
