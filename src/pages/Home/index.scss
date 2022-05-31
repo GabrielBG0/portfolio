@@ -191,7 +191,7 @@
 
       .interests ul {
         display: grid;
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
         text-align: center;
         color: black;
@@ -654,6 +654,7 @@
       align-items: center;
       justify-content: center;
       padding: 2em 2em;
+      padding-top: 0;
       text-align: center;
 
       .title {
@@ -666,9 +667,10 @@
 
       .interests {
         width: 80%;
+        overflow: hidden;
         ul {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 1fr 1fr;
           grid-gap: 1em;
           text-align: center;
           color: white;
