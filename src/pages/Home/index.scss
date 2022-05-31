@@ -665,15 +665,15 @@
       }
 
       .interests {
-        width: 100%;
+        width: 80%;
         ul {
           display: grid;
-          grid-template-columns: repeat(3, 33%);
+          grid-template-columns: repeat(3, 1fr);
           grid-gap: 1em;
           text-align: center;
           color: white;
-          padding: 0 0;
           margin-top: 0.5em;
+          width: 100%;
 
           li {
             font-size: 1.2em;
