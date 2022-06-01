@@ -89,9 +89,9 @@ export default function Home() {
             </p>
             <p className="text">
               I'm a junior Software Engineer and Machine Learning researcher. I’m currently based in Brazil,
-              but looking for international opportunities too. My fields of interest are Web Development,
-              Machine Learning and, most recently, Data Science.<br /> I’m currently researching fake news detection
-              with NLP and Deep Learning algorithms like BERT within my univercity, UFMS.
+              but looking for international opportunities too. My fields of interest are
+              Machine Learning, Data Science and Web Development.<br /> I’m currently researching fake news detection
+              with NLP and Deep Learning algorithms like BERT within my university, UFMS.
             </p>
           </Parallax>
         </div>
@@ -132,17 +132,6 @@ export default function Home() {
             endScroll={1100}>
             <ul>
               <li>
-
-                <div className="icon-container">
-                  <FaCode />
-                </div>
-                <p className="title">Software<br />Engineering</p>
-                <p className="desc">Web Development, System Architecture and Back and Front End Development
-                  are some of the skills I developed in the area of Software Engineering,
-                  with a greater focus on web dev.</p>
-
-              </li>
-              <li>
                 <div className="icon-container">
                   <FaRobot />
                 </div>
@@ -160,6 +149,15 @@ export default function Home() {
                   As my newest interest field, Data Science has attracted me a lot,
                   and it has been very fun to learn about it.</p>
               </li>
+              <li>
+                <div className="icon-container">
+                  <FaCode />
+                </div>
+                <p className="title">Software<br />Engineering</p>
+                <p className="desc">Web Development, System Architecture and Back and Front End Development
+                  are some of the skills I developed in the area of Software Engineering,
+                  with a greater focus on web dev.</p>
+              </li>
             </ul>
           </Parallax>
         </div>
@@ -168,27 +166,13 @@ export default function Home() {
         <div className="projects-container">
           <div className="left">
             <div className="inner">
-              <p className="subtitle">Machine Learning</p>
-              <p className="title">Smart Truncation Tool ✂</p>
-              <p className="desc">Research focused on improving the truncation process needed by some NLP algorithms
-                like BERT. The research is still ongoing so I can not show more details about it.
-              </p>
-            </div>
-          </div>
-          <span style={{ cursor: 'default' }}>
-            <img className="right" src={ITT} alt='ITT Art' />
-          </span>
-        </div>
-      </section>
-      <section className="projects">
-        <div className="projects-container">
-          <div className="left">
-            <div className="inner">
               <p className="subtitle">Data Science</p>
-              <p className="title">Australian Fires 🔥</p>
+              <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf" className="title">Australian Fires 🔥</a>
               <p className="desc">This is an essay for the course on decision support systems.
                 It draws correlations with the weather and the number of fires occurring in Australia and
-                proposes an algorithm capable of predicting the number of fires in an area given historical weather data.
+                proposes an algorithm capable of predicting the number of fires in an area given historical weather data. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf">
+                  <u>here</u>
+                </a>.
               </p>
             </div>
           </div>
@@ -202,10 +186,12 @@ export default function Home() {
           <div className="left">
             <div className="inner">
               <p className="subtitle">Data Science</p>
-              <p className="title">São Paulo Home Prices 🏠</p>
+              <a target="_blank" rel="noreferrer noopener" href="https://link.medium.com/PpRKk4O8sqb" className="title">São Paulo Home Prices 🏠</a>
               <p className="desc">Project developed in the Data Science course from Alura School of Technology.
                 This article discusses ways to predict the price of homes in São Paulo city using data from the home
-                itself and socioeconomic data from the neighborhood the property is located.
+                itself and socioeconomic data from the neighborhood the property is located. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://link.medium.com/PpRKk4O8sqb">
+                  <u>here</u>
+                </a>.
               </p>
             </div>
           </div>
@@ -219,11 +205,13 @@ export default function Home() {
           <div className="left">
             <div className="inner">
               <p className="subtitle">Software Engineering</p>
-              <p className="title">Spotify Stats 📻</p>
+              <a target="_blank" rel="noreferrer noopener" href="https://spotify-stats-js.vercel.app/" className="title">Spotify Stats 📻</a>
               <p className="desc">This is a personal project born from my curiosity to
                 know my top artists and songs on Spotify. It shows your top 20 artists and
                 songs on short, medium and long term, your recently played tracks and, on desktop,
-                offers media controls for your Spotify player.
+                offers media controls for your Spotify player. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://spotify-stats-js.vercel.app/">
+                  <u>here</u>
+                </a>.
               </p>
             </div>
           </div>
@@ -237,16 +225,34 @@ export default function Home() {
           <div className="left">
             <div className="inner">
               <p className="subtitle">Software Engineering</p>
-              <p className="title">CookBook 🍜</p>
+              <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/CookBook" className="title">CookBook 🍜</a>
               <p className="desc">University project for the Web development class.
                 CookBook is a social network where users can share, save and rate recipes and
-                follow their favorite cooking creators.
+                follow their favorite cooking creators. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/CookBook">
+                  <u>here</u>
+                </a>.
               </p>
             </div>
           </div>
           <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/CookBook">
             <img className="right" src={cookBook} alt='cookBook' />
           </a>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="projects-container">
+          <div className="left">
+            <div className="inner">
+              <p className="subtitle">Machine Learning</p>
+              <p className="title">Smart Truncation Tool ✂</p>
+              <p className="desc">Research focused on improving the truncation process needed by some NLP algorithms
+                like BERT. This is the project I'm currently working on so further results will be published soon.
+              </p>
+            </div>
+          </div>
+          <span style={{ cursor: 'default' }}>
+            <img className="right" src={ITT} alt='ITT Art' />
+          </span>
         </div>
       </section>
       <div id="hire" className="action">
