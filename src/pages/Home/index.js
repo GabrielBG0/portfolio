@@ -42,6 +42,8 @@ export default function Home() {
   function handleSubmit(e) {
     e.preventDefault()
 
+    console.log('im been called')
+
     if (!(fullName !== '' && email !== '' && message !== '')) {
       alert("Please fill out all fields")
       return;
@@ -259,14 +261,14 @@ export default function Home() {
         <p className="like">Like What You See?</p>
         <p className="hire"><u>Contact Me!</u></p>
         <div className="contact">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} id='email-form'>
             <input value={fullName} onChange={(e) => { setFullName(e.target.value) }} name='fullname' type="text" placeholder="Full Name*" />
             <input value={email} onChange={(e) => { setEmail(e.target.value) }} name='email' type="email" placeholder="Email*" />
             <input value={phone} onChange={(e) => { setPhone(e.target.value) }} name='phone' type="text" placeholder="Phone" />
             <textarea value={message} onChange={(e) => { setMessage(e.target.value) }} name='message' placeholder="Message*"></textarea>
           </form>
           <div className="button-container">
-            <button style={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'Send'}</button>
+            <button form="email-form" style={{ cursor: sent ? 'default' : 'pointer' }} type={sent ? 'button' : 'submit'}>{sent ? <FaCheck /> : 'Send'}</button>
           </div>
         </div>
       </div>
