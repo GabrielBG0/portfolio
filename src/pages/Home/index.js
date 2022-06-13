@@ -105,7 +105,7 @@ export default function Home() {
           <h2 className="title">My Tool Set</h2>
           <div className="interests">
             <ul>
-              <li>JavaScrip</li>
+              <li>JavaScript</li>
               <li>Python</li>
               <li>Rust</li>
               <li>C#</li>
