@@ -169,16 +169,16 @@ export default function Home() {
           <div className="left">
             <div className="inner">
               <p className="subtitle">Data Science</p>
-              <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf" className="title">Australian Fires 🔥</a>
+              <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers" className="title">Australian Fires 🔥</a>
               <p className="desc">This is an essay for the course on decision support systems.
                 It draws correlations with the weather and the number of fires occurring in Australia and
-                proposes an algorithm capable of predicting the number of fires in an area given historical weather data. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf">
+                proposes an algorithm capable of predicting the number of fires in an area given historical weather data. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers">
                   <u>here</u>
                 </a>.
               </p>
             </div>
           </div>
-          <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers/raw/main/Artigo%20Final/Inc%C3%AAndios%20Australianos%20e%20o%20Papel%20das%20Condi%C3%A7%C3%B5es%20Clim%C3%A1ticas%20em%20Seus%20N%C3%BAmeros.docx.pdf">
+          <a target="_blank" rel="noreferrer noopener" href="https://github.com/GabrielBG0/Australian-Fires-and-the-Role-of-Weather-in-Their-Numbers">
             <img className="right" src={australiaFires} alt='Australian Fires' />
           </a>
         </div>
