@@ -211,7 +211,7 @@ export default function Home() {
               <p className="desc">This is a personal project born from my curiosity to
                 know my top artists and songs on Spotify. It shows your top 20 artists and
                 songs on short, medium and long term, your recently played tracks and, on desktop,
-                offers media controls for your Spotify player. You can find more about it <a target="_blank" rel="noreferrer noopener" href="https://spotify-stats-js.vercel.app/">
+                offers media controls for your Spotify player. You can access it <a target="_blank" rel="noreferrer noopener" href="https://spotify-stats-js.vercel.app/">
                   <u>here</u>
                 </a>.
               </p>
