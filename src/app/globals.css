@@ -5,10 +5,10 @@
 
 body {
   font:
-    400 14px "Roboto Serif",
+    400 16px "Roboto",
     sans-serif;
   background-color: #121212;
-  color: #fff;
+  color: #ffffff;
 }
 
 * {
@@ -33,7 +33,41 @@ p {
   line-height: normal;
 }
 
+li {
+  padding-bottom: 0.5rem;
+}
+
 .hero-bg {
   background: linear-gradient(90deg, #121212 26.61%, rgba(18, 18, 18, 0) 100%);
   backdrop-filter: blur(2.5px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+  transition: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #121212;
+  background: #ffffff;
+}
+
+::selection {
+  color: #121212;
+  background: #ffffff;
 }

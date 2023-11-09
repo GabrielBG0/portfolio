@@ -43,7 +43,9 @@ export default function Home() {
             </h1>
             <div className="flex justify-center items-center">
               <div className="h-full m-3 flex flex-col justify-center items-center">
-                <h2 className="text-5xl mb-[45px]">Deep Learning</h2>
+                <h2 className="text-5xl mb-[45px] font-titles">
+                  Deep Learning
+                </h2>
                 <span className="inline-block w-[75%] ">
                   Lorem ipsum dolor sit amet consectetur. Molestie semper vitae
                   cras nunc tortor vestibulum fermentum risus velit. Scelerisque
@@ -53,7 +55,9 @@ export default function Home() {
                 </span>
               </div>
               <div className="h-full m-3 flex flex-col justify-center items-center">
-                <h2 className="text-5xl mb-[45px]">Software Engineering</h2>
+                <h2 className="text-5xl mb-[45px] font-titles">
+                  Software Engineering
+                </h2>
                 <span className="inline-block w-[75%] ">
                   Lorem ipsum dolor sit amet consectetur. Molestie semper vitae
                   cras nunc tortor vestibulum fermentum risus velit. Scelerisque
