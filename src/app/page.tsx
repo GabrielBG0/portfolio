@@ -132,6 +132,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="w-full p-[90px]">
+          <h1 className="font-titles text-[9rem] font-bold">My Work</h1>
+          <div></div>
+        </div>
       </div>
       <Footer />
     </main>
