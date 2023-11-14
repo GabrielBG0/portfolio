@@ -120,7 +120,7 @@ export default function Home() {
                   <h2 className="font-titles text-4xl font-light pb-[35px]">
                     NLP
                   </h2>
-                  <span className="inline-block ">
+                  <span className="inline-block">
                     Lorem ipsum dolor sit amet consectetur. Molestie semper
                     vitae cras nunc tortor vestibulum fermentum risus velit.
                     Scelerisque massa id feugiat montes. Eros netus ut pulvinar
@@ -133,8 +133,43 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full p-[90px]">
-          <h1 className="font-titles text-[9rem] font-bold">My Work</h1>
-          <div></div>
+          <h1 className="font-titles text-[9rem] font-bold pb-[53px]">
+            My Work
+          </h1>
+          <div className="grid grid-cols-2">
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
+                Semantic <br />
+                Segmentation
+              </h2>
+              <span className="inline-block w-[75%]">
+                Lorem ipsum dolor sit amet consectetur. Sem enim sagittis
+                suscipit diam id magna tempor ipsum viverra. Tempus facilisi
+                vitae quis lectus. Sit sed ipsum nascetur purus elit. Et blandit
+                laoreet felis posuere pretium. Lorem ipsum dolor sit amet
+                consectetur. Sem enim sagittis suscipit diam id magna tempor
+                ipsum viverra. Tempus facilisi vitae quis lectus. Sit sed ipsum
+                nascetur purus elit. Et blandit laoreet felis posuere pretium.
+              </span>
+            </div>
+            <div className="flex justify-center items-center">img</div>
+            <div className="flex justify-center items-center">img</div>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
+                Natural Language <br />
+                Processing
+              </h2>
+              <span className="inline-block w-[75%]">
+                Lorem ipsum dolor sit amet consectetur. Sem enim sagittis
+                suscipit diam id magna tempor ipsum viverra. Tempus facilisi
+                vitae quis lectus. Sit sed ipsum nascetur purus elit. Et blandit
+                laoreet felis posuere pretium. Lorem ipsum dolor sit amet
+                consectetur. Sem enim sagittis suscipit diam id magna tempor
+                ipsum viverra. Tempus facilisi vitae quis lectus. Sit sed ipsum
+                nascetur purus elit. Et blandit laoreet felis posuere pretium.
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
