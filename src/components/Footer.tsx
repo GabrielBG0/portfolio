@@ -1,8 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import starFooter from "../../public/StarFooter.svg";
 
 export default function Footer() {
+  function scrollToId(id: string) {
+    const element = document.getElementById(id);
+    element!.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div className="grid grid-cols-3 w-full h-[180px] px-[90px] py-[15px] mt-[90px] rounded-t-[30px] border-t-[2px] border-white">
       <div className="flex justify-start items-center">
@@ -11,9 +16,15 @@ export default function Footer() {
             Sections
           </h3>
           <ul>
-            <li>About Me</li>
-            <li>My Skill</li>
-            <li>My Work</li>
+            <li>
+              <button onClick={() => scrollToId("AboutMe")}>About Me</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToId("Skills")}>My Skill</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToId("Work")}>My Work</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -21,9 +32,22 @@ export default function Footer() {
             Contact Me
           </h3>
           <ul>
-            <li>Email</li>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
+            <li>
+              <a href="mailto:gabriel.bgs00@gmail.com">Email</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gabrielbgutierrez/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/GabrielBG0" target="_blank">
+                GitHub
+              </a>
+            </li>
           </ul>
         </div>
       </div>

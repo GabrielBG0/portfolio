@@ -36,7 +36,7 @@ export default function Home() {
             <Image src={scroll} alt="scroll" />
           </div>
         </div>
-        <div className="w-full p-[90px]">
+        <div id="AboutMe" className="w-full p-[90px]">
           <div className=" border-[1px] rounded-[30px] bg-bg-secondary p-[45px] flex flex-col justify-center items-center">
             <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
               About Me
@@ -69,11 +69,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full p-[90px]">
+        <div id="Skills" className="w-full p-[90px]">
           <div className="grid grid-cols-2 gap-[20px] lg:min-h-[500px]">
             <div className="w-full h-full bg-bg-secondary rounded-[30px] p-[45px] flex flex-col justify-center items-center">
               <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
-                About Me
+                My Skils
               </h1>
               <span className="inline-block ">
                 Lorem ipsum dolor sit amet consectetur. Tristique sed purus
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full p-[90px]">
+        <div id="Work" className="w-full p-[90px]">
           <h1 className="font-titles text-[9rem] font-bold pb-[53px]">
             My Work
           </h1>

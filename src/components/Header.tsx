@@ -18,15 +18,13 @@ export default function Header() {
       </div>
       <div className="grid grid-cols-3 gap-[90px] font-titles text-2xl">
         <div>
-          <button onClick={() => scrollToId("ProjectStar")}>
-            Project Star
-          </button>
+          <button onClick={() => scrollToId("AboutMe")}>About Me</button>
         </div>
         <div>
-          <button onClick={() => scrollToId("About")}>About Us</button>
+          <button onClick={() => scrollToId("Skills")}>My Skills</button>
         </div>
         <div>
-          <button onClick={() => scrollToId("PressKit")}>Press Kit</button>
+          <button onClick={() => scrollToId("Work")}>My Work</button>
         </div>
       </div>
     </div>
