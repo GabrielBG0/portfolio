@@ -41,29 +41,43 @@ export default function Home() {
             <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
               About Me
             </h1>
-            <div className="flex justify-center items-center">
-              <div className="h-full m-3 flex flex-col justify-center items-center">
+            <div className="flex justify-center items-stat">
+              <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
                 <h2 className="text-5xl mb-[45px] font-titles">
                   Deep Learning
                 </h2>
-                <span className="inline-block w-[75%] ">
-                  Lorem ipsum dolor sit amet consectetur. Molestie semper vitae
-                  cras nunc tortor vestibulum fermentum risus velit. Scelerisque
-                  massa id feugiat montes. Eros netus ut pulvinar ac adipiscing
-                  morbi est. Dictum purus urna eros eget fermentum dolor
-                  pretium.
+                <span className="inline-block pb-2">
+                  My journey into Deep Learning commenced during my Software
+                  Engineering undergrad at the Federal University of Mato Grosso
+                  do Sul. In 2020, my fascination with AI led me to delve into
+                  Natural Language Processing (NLP) during a volunteer research
+                  program.
+                </span>
+                <span className="inline-block pb-2">
+                  For two immersive years, I focused on pioneering work with
+                  BERT, an influential deep learning model transforming NLP.
+                  Within a dynamic research setting, I explored BERT's
+                  architecture and applications, unraveling its potential to
+                  reshape language understanding. This experience enriched my
+                  academic path, fueling my passion for Deep Learning.{" "}
                 </span>
               </div>
-              <div className="h-full m-3 flex flex-col justify-center items-center">
+              <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
                 <h2 className="text-5xl mb-[45px] font-titles">
                   Software Engineering
                 </h2>
-                <span className="inline-block w-[75%] ">
-                  Lorem ipsum dolor sit amet consectetur. Molestie semper vitae
-                  cras nunc tortor vestibulum fermentum risus velit. Scelerisque
-                  massa id feugiat montes. Eros netus ut pulvinar ac adipiscing
-                  morbi est. Dictum purus urna eros eget fermentum dolor
-                  pretium.
+                <span className="inline-block pb-2">
+                  My Software Engineering journey began at UFMS, Brazil, where
+                  my coding passion transformed into a knack for designing
+                  intricate systems. During my tenure, I contributed to crafting
+                  applications pivotal in medical data collection and guiding
+                  public decisions in Mato Grosso do Sul state.
+                </span>
+                <span className="inline-block pb-2">
+                  Working on these impactful projects reinforced my belief in
+                  technology's potential for societal change. This experience
+                  strengthened my resolve to innovate using software engineering
+                  as a catalyst for real-world solutions.
                 </span>
               </div>
             </div>
