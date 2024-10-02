@@ -4,6 +4,8 @@ import nn from "../../public/NN.svg";
 import arrow from "../../public/arrow.svg";
 import scroll from "../../public/Scroll.svg";
 import Footer from "@/components/Footer";
+import NLP from "../../public/NLP.svg";
+import SEG from "../../public/SEG.svg";
 
 export default function Home() {
   return (
@@ -56,7 +58,7 @@ export default function Home() {
                 <span className="inline-block pb-2">
                   For two immersive years, I focused on pioneering work with
                   BERT, an influential deep learning model transforming NLP.
-                  Within a dynamic research setting, I explored BERT's
+                  Within a dynamic research setting, I explored BERT&apos;s
                   architecture and applications, unraveling its potential to
                   reshape language understanding. This experience enriched my
                   academic path, fueling my passion for Deep Learning.{" "}
@@ -75,9 +77,9 @@ export default function Home() {
                 </span>
                 <span className="inline-block pb-2">
                   Working on these impactful projects reinforced my belief in
-                  technology's potential for societal change. This experience
-                  strengthened my resolve to innovate using software engineering
-                  as a catalyst for real-world solutions.
+                  technology&apos;s potential for societal change. This
+                  experience strengthened my resolve to innovate using software
+                  engineering as a catalyst for real-world solutions.
                 </span>
               </div>
             </div>
@@ -150,7 +152,7 @@ export default function Home() {
           <h1 className="font-titles text-[9rem] font-bold pb-[53px]">
             My Work
           </h1>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 gap-40">
             <div className="flex flex-col justify-center items-center">
               <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
                 Semantic <br />
@@ -166,8 +168,12 @@ export default function Home() {
                 nascetur purus elit. Et blandit laoreet felis posuere pretium.
               </span>
             </div>
-            <div className="flex justify-center items-center">img</div>
-            <div className="flex justify-center items-center">img</div>
+            <div className="flex justify-center items-center">
+              <Image src={SEG} alt="" />
+            </div>
+            <div className="flex justify-center items-center">
+              <Image src={NLP} alt="" />
+            </div>
             <div className="flex flex-col justify-center items-center">
               <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
                 Natural Language <br />
