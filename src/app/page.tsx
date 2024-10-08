@@ -6,6 +6,7 @@ import scroll from "../../public/Scroll.svg";
 import Footer from "@/components/Footer";
 import NLP from "../../public/NLP.svg";
 import SEG from "../../public/SEG.svg";
+import Minerva from "../../public/Minerva.svg";
 
 export default function Home() {
   return (
@@ -43,43 +44,53 @@ export default function Home() {
             <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
               About Me
             </h1>
-            <div className="flex justify-center items-stat">
+            <div className="flex justify-evenly items-stat w-full">
               <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
                 <h2 className="text-5xl mb-[45px] font-titles">
-                  Deep Learning
+                  Machine Learning
                 </h2>
-                <span className="inline-block pb-2">
-                  My journey into Deep Learning commenced during my Software
-                  Engineering undergrad at the Federal University of Mato Grosso
-                  do Sul. In 2020, my fascination with AI led me to delve into
-                  Natural Language Processing (NLP) during a volunteer research
-                  program.
-                </span>
-                <span className="inline-block pb-2">
-                  For two immersive years, I focused on pioneering work with
-                  BERT, an influential deep learning model transforming NLP.
-                  Within a dynamic research setting, I explored BERT&apos;s
-                  architecture and applications, unraveling its potential to
-                  reshape language understanding. This experience enriched my
-                  academic path, fueling my passion for Deep Learning.{" "}
+                <span className="inline-block pb-2 max-w-[80ch]">
+                  I developed a passion for machine learning during my
+                  university studies, where I explored its vast potential to
+                  solve real-world problems. This interest led me to work as a
+                  junior researcher volunteer for two years, focusing on natural
+                  language processing projects. During this time, I conducted
+                  research on fake news detection using BERT, deepening my
+                  understanding of cutting-edge AI models.
+                  <br />
+                  <br />
+                  Currently, I am pursuing a master&apos;s degree at Unicamp,
+                  where my work focuses on the semantic segmentation of seismic
+                  facies. I had the opportunity to present my findings at the
+                  85th annual EAGE conference and exhibition, where I published
+                  my research, contributing to advancements in the field of
+                  geoscience.
                 </span>
               </div>
               <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
                 <h2 className="text-5xl mb-[45px] font-titles">
                   Software Engineering
                 </h2>
-                <span className="inline-block pb-2">
-                  My Software Engineering journey began at UFMS, Brazil, where
-                  my coding passion transformed into a knack for designing
-                  intricate systems. During my tenure, I contributed to crafting
-                  applications pivotal in medical data collection and guiding
-                  public decisions in Mato Grosso do Sul state.
-                </span>
-                <span className="inline-block pb-2">
-                  Working on these impactful projects reinforced my belief in
-                  technology&apos;s potential for societal change. This
-                  experience strengthened my resolve to innovate using software
-                  engineering as a catalyst for real-world solutions.
+                <span className="inline-block pb-2 max-w-[80ch]">
+                  I hold a degree in Software Engineering from one of
+                  Brazil&apos;s top universities, where I had the opportunity to
+                  contribute to impactful projects. During my studies, I worked
+                  on two projects focused on medical data collection for
+                  research that aimed to inform public policy decisions. These
+                  experiences honed my skills in developing practical solutions
+                  for real-world problems.
+                  <br />
+                  <br />
+                  Since joining Unicamp&apos;s master&apos;s program, I&apos;ve
+                  applied my software engineering expertise to research,
+                  bringing a unique perspective to tackling complex challenges.
+                  I currently lead Minerva, an open-source machine learning
+                  training framework designed to meet the specific needs of
+                  researchers, developed in collaboration with Discovery
+                  Unicamp. As the software architect, core developer, and core
+                  maintainer of Minerva, I ensure the framework is robust,
+                  flexible, and aligned with the evolving demands of the
+                  research community.
                 </span>
               </div>
             </div>
@@ -91,19 +102,17 @@ export default function Home() {
               <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
                 My Skils
               </h1>
-              <span className="inline-block ">
-                Lorem ipsum dolor sit amet consectetur. Tristique sed purus
-                egestas pellentesque. Etiam accumsan quis feugiat vivamus. Ut
-                rhoncus suspendisse nulla non id aliquam leo mollis. Gravida
-                dolor cursus tempus dui facilisi nec vulputate sagittis nisl.
-                Morbi suscipit dolor vitae consectetur libero turpis metus
-                gravida imperdiet. Volutpat vitae leo in at. Lorem ipsum dolor
-                sit amet consectetur. Tristique sed purus egestas pellentesque.
-                Etiam accumsan quis feugiat vivamus. Ut rhoncus suspendisse
-                nulla non id aliquam leo mollis. Gravida dolor cursus tempus dui
-                facilisi nec vulputate sagittis nisl. Morbi suscipit dolor vitae
-                consectetur libero turpis metus gravida imperdiet. Volutpat
-                vitae leo in at.
+              <span className="inline-block max-w-[80ch]">
+                With a strong foundation in software engineering and machine
+                learning, I bring a unique blend of technical expertise and
+                research experience to my projects. My background spans
+                developing data-driven applications, contributing to impactful
+                research, and leading open-source initiatives. I specialize in
+                computer vision, semantic segmentation, and building scalable
+                machine learning frameworks like Minerva. My skills extend
+                beyond coding; I architect solutions that bridge the gap between
+                cutting-edge research and practical implementation, always with
+                a focus on innovation and collaboration.
               </span>
             </div>
             <div className="grid grid-cols-1 gap-[20px] auto-rows-fr">
@@ -111,12 +120,18 @@ export default function Home() {
                 <h2 className="font-titles text-6xl font-light pb-[35px]">
                   Transformers
                 </h2>
-                <span className="inline-block">
-                  Lorem ipsum dolor sit amet consectetur. Molestie semper vitae
-                  cras nunc tortor vestibulum fermentum risus velit. Scelerisque
-                  massa id feugiat montes. Eros netus ut pulvinar ac adipiscing
-                  morbi est. Dictum purus urna eros eget fermentum dolor
-                  pretium.
+                <span className="inline-block max-w-[80ch]">
+                  I have extensive experience working with transformer models,
+                  having started with BERT during my research on fake news
+                  detection. In my master&apos;s program, I expanded my focus to
+                  include vision transformers (ViT) and multi-scale vision
+                  transformers (MiT) for semantic segmentation. I worked with
+                  state-of-the-art models such as SegFormer, Segmenter, and SetR
+                  to tackle the challenging task of segmenting seismic facies.
+                  My research also explored the comparative performance of
+                  transformer-based models versus traditional CNN architectures,
+                  which culminated in a paper that highlighted the advantages
+                  and limitations of each approach in geoscience applications.
                 </span>
               </div>
               <div className="grid grid-cols-2 gap-[20px] auto-rows-fr">
@@ -124,24 +139,36 @@ export default function Home() {
                   <h2 className="font-titles text-4xl font-light pb-[35px]">
                     Computer Vision
                   </h2>
-                  <span className="inline-block  ">
-                    Lorem ipsum dolor sit amet consectetur. Molestie semper
-                    vitae cras nunc tortor vestibulum fermentum risus velit.
-                    Scelerisque massa id feugiat montes. Eros netus ut pulvinar
-                    ac adipiscing morbi est. Dictum purus urna eros eget
-                    fermentum dolor pretium.
+                  <span className="inline-block  max-w-[80ch]">
+                    My experience in computer vision spans various domains, with
+                    a strong focus on image processing and semantic
+                    segmentation. In addition to working with cutting-edge
+                    transformer models for segmentation, I&apos;ve gained
+                    expertise in self-supervised learning (SSL) techniques,
+                    which are crucial for enhancing model performance with
+                    limited labeled data. Through my work on seismic facies
+                    segmentation and other image-based tasks, I&apos;ve
+                    developed a deep understanding of the intricacies of visual
+                    data, enabling me to tackle complex problems with innovative
+                    solutions.
                   </span>
                 </div>
                 <div className="bg-bg-secondary rounded-[30px] p-[45px] h-full flex flex-col justify-center items-center">
                   <h2 className="font-titles text-4xl font-light pb-[35px]">
                     NLP
                   </h2>
-                  <span className="inline-block">
-                    Lorem ipsum dolor sit amet consectetur. Molestie semper
-                    vitae cras nunc tortor vestibulum fermentum risus velit.
-                    Scelerisque massa id feugiat montes. Eros netus ut pulvinar
-                    ac adipiscing morbi est. Dictum purus urna eros eget
-                    fermentum dolor pretium.
+                  <span className="inline-block max-w-[80ch]">
+                    I have a strong background in Natural Language Processing,
+                    having worked with advanced models like BERT to tackle
+                    real-world problems such as fake news detection. My work in
+                    this area involved leveraging pre-trained transformer models
+                    to understand and classify text data, contributing to the
+                    development of robust systems for detecting misinformation.
+                    This experience gave me a solid foundation in NLP
+                    techniques, including tokenization, attention mechanisms,
+                    and fine-tuning models for domain-specific tasks, allowing
+                    me to efficiently handle complex text processing and
+                    analysis challenges.
                   </span>
                 </div>
               </div>
@@ -158,36 +185,86 @@ export default function Home() {
                 Semantic <br />
                 Segmentation
               </h2>
-              <span className="inline-block w-[75%]">
-                Lorem ipsum dolor sit amet consectetur. Sem enim sagittis
-                suscipit diam id magna tempor ipsum viverra. Tempus facilisi
-                vitae quis lectus. Sit sed ipsum nascetur purus elit. Et blandit
-                laoreet felis posuere pretium. Lorem ipsum dolor sit amet
-                consectetur. Sem enim sagittis suscipit diam id magna tempor
-                ipsum viverra. Tempus facilisi vitae quis lectus. Sit sed ipsum
-                nascetur purus elit. Et blandit laoreet felis posuere pretium.
+              <span className="inline-block pb-2 max-w-[80ch]">
+                In my work on semantic segmentation, I have focused on applying
+                advanced machine learning techniques to the field of seismic
+                facies analysis. My master&apos;s research at Unicamp explored
+                the use of transformer models like ViT and MiT to improve the
+                accuracy and efficiency of seismic facies segmentation,
+                comparing their performance with traditional CNN-based
+                approaches.This research was published and presented at the 85th
+                annual EAGE conference and exhibition, where it garnered
+                significant attention. <br />
+                <br />
+                Both the paper and my presentation received some of the highest
+                ratings from the conference reviewers, recognizing the impact of
+                this work on the geoscience community. My contributions not only
+                advance the application of machine learning in geophysics but
+                also provide valuable insights into the effectiveness of
+                transformer models for complex geospatial tasks.
               </span>
             </div>
             <div className="flex justify-center items-center">
-              <Image src={SEG} alt="" />
+              <Image src={SEG} alt="" width={750} height={750} />
             </div>
             <div className="flex justify-center items-center">
-              <Image src={NLP} alt="" />
+              <Image src={NLP} alt="" width={750} height={750} />
             </div>
             <div className="flex flex-col justify-center items-center">
               <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
                 Natural Language <br />
                 Processing
               </h2>
-              <span className="inline-block w-[75%]">
-                Lorem ipsum dolor sit amet consectetur. Sem enim sagittis
-                suscipit diam id magna tempor ipsum viverra. Tempus facilisi
-                vitae quis lectus. Sit sed ipsum nascetur purus elit. Et blandit
-                laoreet felis posuere pretium. Lorem ipsum dolor sit amet
-                consectetur. Sem enim sagittis suscipit diam id magna tempor
-                ipsum viverra. Tempus facilisi vitae quis lectus. Sit sed ipsum
-                nascetur purus elit. Et blandit laoreet felis posuere pretium.
+              <span className="inline-block pb-2 max-w-[80ch]">
+                My work in NLP has focused on developing solutions to address
+                pressing issues in information integrity, particularly in the
+                detection of fake news. During my time as a junior researcher, I
+                utilized BERT, a leading transformer model, to design a system
+                capable of identifying misinformation with high accuracy. This
+                research involved fine-tuning the model for the specific task of
+                text classification, optimizing it for detecting patterns and
+                nuances in language that signal deceptive or misleading content.
+                <br />
+                <br />
+                This work laid a strong foundation in NLP, allowing me to
+                contribute to projects requiring deep understanding of language
+                processing and the application of cutting-edge transformer
+                models in real-world scenarios.
               </span>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
+                Minerva
+              </h2>
+              <span className="inline-block pb-2 max-w-[80ch]">
+                As the lead of Minerva, an open-source machine learning training
+                framework developed at Discovery Unicamp, I&apos;ve played a key
+                role in its architecture, development, and maintenance. Minerva
+                was designed to meet the specific needs of researchers,
+                providing a flexible and scalable solution for training and
+                fine-tuning machine learning models across a variety of tasks.
+                My role as the software architect, core developer, and core
+                maintainer has involved ensuring that the framework is robust,
+                user-friendly, and adaptable to the fast-evolving demands of
+                machine learning research.
+                <br />
+                <br />
+                Minerva stands out by offering an accessible and powerful tool
+                for both academic and industry researchers, bridging the gap
+                between research and practical implementation. Through my work
+                on this project, I&apos;ve gained valuable experience in
+                open-source software development, contributing to a tool that
+                empowers the research community to advance machine learning in
+                meaningful ways.
+              </span>
+            </div>
+            <div className="flex justify-center items-center">
+              <a
+                href="https://github.com/discovery-unicamp/Minerva"
+                target="_blank"
+              >
+                <Image src={Minerva} width={750} height={750} alt="" />
+              </a>
             </div>
           </div>
         </div>

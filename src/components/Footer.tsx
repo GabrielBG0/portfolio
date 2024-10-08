@@ -55,7 +55,7 @@ export default function Footer() {
         <Image src={starFooter} alt="logo" />
       </div>
       <div className="flex justify-center items-center font-titles text-xl">
-        © 2023 - Gabriel Gutierrez
+        © 2024 - Gabriel Gutierrez
       </div>
     </div>
   );
