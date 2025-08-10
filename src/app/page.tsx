@@ -12,44 +12,56 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="">
-        <div className="flex justify-center items-center absolute w-full h-screen px-[44px]">
+      <div>
+        {/* Background Image */}
+        <div className="hidden sm:flex justify-center items-center absolute w-full h-screen px-4 sm:px-[44px]">
           <Image
             src={nn}
             alt="Neural Net"
-            className="w-full h-full object-contain"
+            className="hidden sm:block w-full h-full object-contain"
           />
         </div>
-        <div className="hero-bg w-full h-[100vh] flex flex-col justify-center items-start p-[90px]">
-          <div className="h-fit w-fit mb-[24px]">
-            <h1 className="text-left font-titles text-8xl font-extrabold">
+
+        {/* Hero Section */}
+        <div className="hero-bg w-full h-auto sm:h-screen py-12 sm:py-0 flex flex-col justify-center items-start px-6 sm:px-[90px]">
+          <div className="h-fit w-fit mb-6 sm:mb-[24px]">
+            <h1 className="text-left font-titles text-4xl sm:text-6xl lg:text-8xl font-extrabold">
               Deep Learning,
               <br />
               Software Engineering
               <br />& Artificial Intelligence
             </h1>
           </div>
-          <div className="h-fit w-fit mb-[24px] flex justify-start items-center">
-            <h2 className="font-titles text-5xl pr-[12px] font-light">
+          <div className="h-fit w-fit mb-6 sm:mb-[24px] flex justify-start items-center">
+            <h2 className="font-titles text-2xl sm:text-4xl lg:text-5xl pr-3 font-light">
               Meet Gabriel
             </h2>
-            <Image src={arrow} alt="arrow" />
+            <Image src={arrow} alt="arrow" className="w-6 sm:w-auto" />
           </div>
-          <div className="h-fit w-fit mb-[24px]">
-            <Image src={scroll} alt="scroll" />
+          <div className="h-fit w-fit">
+            <Image
+              src={scroll}
+              alt="scroll"
+              className="hidden sm:block w-8 sm:w-auto"
+            />
           </div>
         </div>
-        <div id="AboutMe" className="w-full p-[90px]">
-          <div className=" border-[1px] rounded-[30px] bg-bg-secondary p-[45px] flex flex-col justify-center items-center">
-            <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
+
+        {/* About Me Section */}
+        <div
+          id="AboutMe"
+          className="w-full px-6 sm:px-[90px] py-[60px] sm:py-[90px]"
+        >
+          <div className="border rounded-[30px] bg-bg-secondary p-6 sm:p-[45px] flex flex-col justify-center items-center">
+            <h1 className="font-titles text-4xl sm:text-6xl lg:text-8xl font-extrabold pb-[30px] sm:pb-[45px]">
               About Me
             </h1>
-            <div className="flex justify-evenly items-stat w-full">
-              <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
-                <h2 className="text-5xl mb-[45px] font-titles">
+            <div className="flex flex-col md:flex-row gap-8 sm:gap-12 w-full">
+              <div className="flex flex-col justify-start w-full md:w-1/2 px-2 sm:px-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 font-titles text-center md:text-left">
                   Machine Learning
                 </h2>
-                <span className="inline-block pb-2 max-w-[80ch]">
+                <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                   I developed a passion for machine learning during my
                   university studies, where I explored its vast potential to
                   solve real-world problems. This interest led me to work as a
@@ -67,11 +79,11 @@ export default function Home() {
                   geoscience.
                 </span>
               </div>
-              <div className="h-full m-3 flex flex-col justify-center items-center w-[50%]">
-                <h2 className="text-5xl mb-[45px] font-titles">
+              <div className="flex flex-col justify-start w-full md:w-1/2 px-2 sm:px-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6 font-titles text-center md:text-left">
                   Software Engineering
                 </h2>
-                <span className="inline-block pb-2 max-w-[80ch]">
+                <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                   I hold a degree in Software Engineering from one of
                   Brazil&apos;s top universities, where I had the opportunity to
                   contribute to impactful projects. During my studies, I worked
@@ -96,13 +108,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="Skills" className="w-full p-[90px]">
-          <div className="grid grid-cols-2 gap-[20px] lg:min-h-[500px]">
-            <div className="w-full h-full bg-bg-secondary rounded-[30px] p-[45px] flex flex-col justify-center items-center">
-              <h1 className="font-titles text-8xl font-extrabold pb-[45px]">
-                My Skils
+
+        {/* Skills Section */}
+        <div
+          id="Skills"
+          className="w-full px-6 sm:px-[90px] py-[60px] sm:py-[90px]"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[20px] lg:min-h-[500px]">
+            <div className="w-full bg-bg-secondary rounded-[30px] p-6 sm:p-[45px] flex flex-col justify-center items-center">
+              <h1 className="font-titles text-4xl sm:text-6xl lg:text-8xl font-extrabold pb-[30px] sm:pb-[45px]">
+                My Skills
               </h1>
-              <span className="inline-block max-w-[80ch]">
+              <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                 With a strong foundation in software engineering and machine
                 learning, I bring a unique blend of technical expertise and
                 research experience to my projects. My background spans
@@ -115,12 +132,12 @@ export default function Home() {
                 a focus on innovation and collaboration.
               </span>
             </div>
-            <div className="grid grid-cols-1 gap-[20px] auto-rows-fr">
-              <div className="bg-bg-secondary h-full rounded-[30px] p-[45px] flex flex-col justify-center items-center">
-                <h2 className="font-titles text-6xl font-light pb-[35px]">
+            <div className="grid grid-cols-1 gap-[20px] lg:auto-rows-fr">
+              <div className="bg-bg-secondary rounded-[30px] p-6 sm:p-[45px] flex flex-col justify-start items-center">
+                <h2 className="font-titles text-2xl sm:text-4xl lg:text-6xl font-light pb-[20px] sm:pb-[35px] text-center">
                   Transformers
                 </h2>
-                <span className="inline-block max-w-[80ch]">
+                <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                   I have extensive experience working with transformer models,
                   having started with BERT during my research on fake news
                   detection. In my master&apos;s program, I expanded my focus to
@@ -134,12 +151,12 @@ export default function Home() {
                   and limitations of each approach in geoscience applications.
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-[20px] auto-rows-fr">
-                <div className="bg-bg-secondary rounded-[30px] p-[45px] h-full flex flex-col justify-center items-center">
-                  <h2 className="font-titles text-4xl font-light pb-[35px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] auto-rows-fr">
+                <div className="bg-bg-secondary rounded-[30px] p-6 sm:p-[45px] flex flex-col justify-center items-center">
+                  <h2 className="font-titles text-xl sm:text-3xl lg:text-4xl font-light pb-[20px] sm:pb-[35px]">
                     Computer Vision
                   </h2>
-                  <span className="inline-block  max-w-[80ch]">
+                  <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                     My experience in computer vision spans various domains, with
                     a strong focus on image processing and semantic
                     segmentation. In addition to working with cutting-edge
@@ -153,11 +170,11 @@ export default function Home() {
                     solutions.
                   </span>
                 </div>
-                <div className="bg-bg-secondary rounded-[30px] p-[45px] h-full flex flex-col justify-center items-center">
-                  <h2 className="font-titles text-4xl font-light pb-[35px]">
+                <div className="bg-bg-secondary rounded-[30px] p-6 sm:p-[45px] flex flex-col justify-center items-center">
+                  <h2 className="font-titles text-xl sm:text-3xl lg:text-4xl font-light pb-[20px] sm:pb-[35px]">
                     NLP
                   </h2>
-                  <span className="inline-block max-w-[80ch]">
+                  <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                     I have a strong background in Natural Language Processing,
                     having worked with advanced models like BERT to tackle
                     real-world problems such as fake news detection. My work in
@@ -175,17 +192,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="Work" className="w-full p-[90px]">
-          <h1 className="font-titles text-[9rem] font-bold pb-[53px]">
+
+        {/* Work Section */}
+        <div
+          id="Work"
+          className="w-full px-6 sm:px-[90px] pt-[60px] sm:pt-[90px] pb-4 sm:pb-[60px]"
+        >
+          <h1 className="font-titles text-5xl sm:text-7xl lg:text-[9rem] font-bold pb-[30px] sm:pb-[53px]">
             My Work
           </h1>
-          <div className="grid grid-cols-2 gap-40">
-            <div className="flex flex-col justify-center items-center">
-              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
-                Semantic <br />
-                Segmentation
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-40">
+            <div className="flex flex-col justify-center items-center text-center">
+              <h2 className="font-titles text-3xl sm:text-5xl lg:text-6xl font-normal pb-[20px] sm:pb-[35px]">
+                Semantic Segmentation
               </h2>
-              <span className="inline-block pb-2 max-w-[80ch]">
+              <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                 In my work on semantic segmentation, I have focused on applying
                 advanced machine learning techniques to the field of seismic
                 facies analysis. My master&apos;s research at Unicamp explored
@@ -205,17 +226,24 @@ export default function Home() {
               </span>
             </div>
             <div className="flex justify-center items-center">
-              <Image src={SEG} alt="" width={750} height={750} />
+              <Image
+                src={SEG}
+                alt=""
+                className="hidden sm:block max-w-full h-auto"
+              />
             </div>
-            <div className="flex justify-center items-center">
-              <Image src={NLP} alt="" width={750} height={750} />
+            <div className="flex justify-center items-center order-last md:order-none">
+              <Image
+                src={NLP}
+                alt=""
+                className="hidden sm:block max-w-full h-auto"
+              />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
-                Natural Language <br />
-                Processing
+            <div className="flex flex-col justify-center items-center text-center">
+              <h2 className="font-titles text-3xl sm:text-5xl lg:text-6xl font-normal pb-[20px] sm:pb-[35px]">
+                Natural Language Processing
               </h2>
-              <span className="inline-block pb-2 max-w-[80ch]">
+              <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                 My work in NLP has focused on developing solutions to address
                 pressing issues in information integrity, particularly in the
                 detection of fake news. During my time as a junior researcher, I
@@ -232,11 +260,20 @@ export default function Home() {
                 models in real-world scenarios.
               </span>
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <h2 className="font-titles text-6xl font-normal pb-[35px] text-center">
-                Minerva
+            <div className="flex flex-col justify-center items-center text-center">
+              {/* Mobile: clickable title */}
+              <h2 className="font-titles text-3xl sm:text-5xl lg:text-6xl font-normal pb-[20px] sm:pb-[35px]">
+                <a
+                  href="https://github.com/discovery-unicamp/Minerva"
+                  target="_blank"
+                  className="block sm:hidden"
+                >
+                  Minerva
+                </a>
+                <span className="hidden sm:inline">Minerva</span>
               </h2>
-              <span className="inline-block pb-2 max-w-[80ch]">
+
+              <span className="inline-block max-w-full sm:max-w-[80ch] text-justify">
                 As the lead of Minerva, an open-source machine learning training
                 framework developed at Discovery Unicamp, I&apos;ve played a key
                 role in its architecture, development, and maintenance. Minerva
@@ -263,7 +300,11 @@ export default function Home() {
                 href="https://github.com/discovery-unicamp/Minerva"
                 target="_blank"
               >
-                <Image src={Minerva} width={750} height={750} alt="" />
+                <Image
+                  src={Minerva}
+                  alt=""
+                  className="hidden sm:block max-w-full h-auto"
+                />
               </a>
             </div>
           </div>
