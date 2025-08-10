@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/Evaluation-of-Transformers",
+      "destination": "https://github.com/GabrielBG0/Evaluation-of-Transformers-Seismic-Facies-Segmentation",
+      "permanent": true
+    }
+  ]
+}
