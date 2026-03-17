@@ -23,7 +23,7 @@ export default function Header() {
           <Image
             src={star}
             alt="logo"
-            className="w-7 h-7 md:w-auto md:h-auto opacity-100 group-hover:rotate-[60deg] transition-all duration-500"
+            className="w-7 h-7 md:w-auto md:h-auto opacity-100 group-hover:rotate-[120deg] transition-all duration-500"
           />
           <h1 className="pl-2 md:pl-3 text-xl md:text-5xl font-header tracking-wider whitespace-nowrap text-white">
             Gabriel Gutierrez
