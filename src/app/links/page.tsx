@@ -37,12 +37,12 @@ const links: { label: string; href: string; icon: LucideIcon }[] = [
   },
   {
     label: "Google Scholar",
-    href: "https://scholar.google.com/citations?user=GabrielBG0",
+    href: "https://scholar.google.com/citations?user=g6yM01cAAAAJ",
     icon: GraduationCap,
   },
   {
     label: "Research Blog",
-    href: "https://medium.com/@gabriel.bgs00",
+    href: "https://www.gabrielbg.dev/",
     icon: PenLine,
   },
   {
@@ -52,7 +52,7 @@ const links: { label: string; href: string; icon: LucideIcon }[] = [
   },
   {
     label: "Email",
-    href: "mailto:gabriel.bgs00@gmail.com",
+    href: "mailto:gabriel.gutierrez@ic.unicmap.br",
     icon: Mail,
   },
 ];
