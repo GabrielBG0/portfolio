@@ -1,14 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,600;8..144,700;8..144,800&display=swap");
+/* Nebula Sans — Light (300) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Nebula Sans — Book (400) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Nebula Sans — Medium (500) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Nebula Sans — Semibold (600) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Nebula Sans — Bold (700) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Nebula Sans — Black (900) */
+@font-face {
+  font-family: "Nebula Sans";
+  src: url("/fonts/NebulaSans-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font:
-    400 16px "Roboto",
+    400 16px "Nebula Sans",
     sans-serif;
   background-color: #121212;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 * {
@@ -26,7 +96,7 @@ h1 {
 }
 
 p {
-  font-family: Roboto;
+  font-family: "Nebula Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -37,9 +107,38 @@ li {
   padding-bottom: 0.5rem;
 }
 
-.hero-bg {
-  background: linear-gradient(90deg, #121212 26.61%, rgba(18, 18, 18, 0) 100%);
-  backdrop-filter: blur(2.5px);
+.hero-gradient {
+  background: radial-gradient(
+      ellipse 80% 60% at 20% 50%,
+      rgba(139, 92, 246, 0.06) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 30%,
+      rgba(244, 63, 94, 0.04) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 70% 40% at 50% 80%,
+      rgba(245, 158, 11, 0.03) 0%,
+      transparent 50%
+    ),
+    #121212;
+  animation: heroShift 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.hero-dots {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 ::-webkit-scrollbar {

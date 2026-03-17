@@ -10,46 +10,71 @@ export default function Footer() {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 w-full h-auto sm:h-[180px] px-6 sm:px-[90px] py-6 sm:py-[15px] mt-[40px] sm:mt-[90px] gap-8 sm:gap-0 rounded-t-[30px] border-t-[2px] border-white">
+    <footer className="relative grid grid-cols-1 sm:grid-cols-3 w-full h-auto sm:h-[180px] px-6 sm:px-[90px] py-8 sm:py-[15px] mt-10 sm:mt-[90px] gap-8 sm:gap-0 rounded-t-[20px] sm:rounded-t-[30px] border-t border-white/[0.08] bg-bg/60 backdrop-blur-md z-40">
       {/* Sections + Contact */}
-      <div className="flex flex-col sm:flex-row justify-start sm:items-center gap-6 sm:gap-8">
+      <div className="flex flex-row justify-center sm:justify-start items-start gap-12 sm:gap-16">
         {/* Sections */}
-        <div>
-          <h3 className="font-titles text-xl sm:text-2xl font-normal underline pb-2">
+        <div className="text-center sm:text-left">
+          <h3 className="font-titles text-lg sm:text-xl font-medium tracking-wide text-white pb-3">
             Sections
           </h3>
-          <ul>
+          <ul className="flex flex-col gap-2">
             <li>
-              <button onClick={() => scrollToId("AboutMe")}>About Me</button>
+              <button
+                onClick={() => scrollToId("AboutMe")}
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
+              >
+                About Me
+              </button>
             </li>
             <li>
-              <button onClick={() => scrollToId("Skills")}>My Skill</button>
+              <button
+                onClick={() => scrollToId("Skills")}
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
+              >
+                My Skills
+              </button>
             </li>
             <li>
-              <button onClick={() => scrollToId("Work")}>My Work</button>
+              <button
+                onClick={() => scrollToId("Work")}
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
+              >
+                My Work
+              </button>
             </li>
           </ul>
         </div>
 
         {/* Contact */}
-        <div>
-          <h3 className="font-titles text-xl sm:text-2xl font-normal underline pb-2">
+        <div className="text-center sm:text-left">
+          <h3 className="font-titles text-lg sm:text-xl font-medium tracking-wide text-white pb-3">
             Contact Me
           </h3>
-          <ul>
+          <ul className="flex flex-col gap-2">
             <li>
-              <a href="mailto:gabriel.bgs00@gmail.com">Email</a>
+              <a
+                href="mailto:gabriel.bgs00@gmail.com"
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
+              >
+                Email
+              </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/gabrielbgutierrez/"
                 target="_blank"
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/GabrielBG0" target="_blank">
+              <a
+                href="https://github.com/GabrielBG0"
+                target="_blank"
+                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
+              >
                 GitHub
               </a>
             </li>
@@ -58,18 +83,21 @@ export default function Footer() {
       </div>
 
       {/* Logo */}
-      <div className="flex justify-center items-center">
+      <div
+        className="flex justify-center items-center group cursor-pointer h-full"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <Image
           src={starFooter}
           alt="logo"
-          className="w-10 h-10 sm:w-auto sm:h-auto"
+          className="w-12 h-12 sm:w-16 sm:h-16 opacity-70 group-hover:opacity-100 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500"
         />
       </div>
 
       {/* Copyright */}
-      <div className="flex justify-center items-center font-titles text-base sm:text-xl text-center">
-        © 2024 - Gabriel Gutierrez
+      <div className="flex justify-center sm:justify-end items-end sm:items-center font-titles text-xs sm:text-sm text-white/40 text-center sm:text-right pb-4 sm:pb-0">
+        © {new Date().getFullYear()} — Gabriel Gutierrez
       </div>
-    </div>
+    </footer>
   );
 }

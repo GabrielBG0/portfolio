@@ -8,9 +8,9 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      header: ["Libre Baskerville", "serif"],
-      titles: ["Roboto Serif", "serif"],
-      boddy: ["Roboto", "sans-serif"],
+      header: ['"Nebula Sans"', "sans-serif"],
+      titles: ['"Nebula Sans"', "sans-serif"],
+      boddy: ['"Nebula Sans"', "sans-serif"],
     },
     extend: {
       colors: {
