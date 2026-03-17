@@ -21,6 +21,11 @@ export const metadata: Metadata = {
 
 const links: { label: string; href: string; icon: LucideIcon }[] = [
   {
+    label: "Email",
+    href: "mailto:gabriel.gutierrez@ic.unicmap.br",
+    icon: Mail,
+  },
+  {
     label: "Portfolio",
     href: "/",
     icon: Globe,
@@ -49,11 +54,6 @@ const links: { label: string; href: string; icon: LucideIcon }[] = [
     label: "Minerva Framework",
     href: "https://github.com/discovery-unicamp/Minerva",
     icon: Microscope,
-  },
-  {
-    label: "Email",
-    href: "mailto:gabriel.gutierrez@ic.unicmap.br",
-    icon: Mail,
   },
 ];
 
