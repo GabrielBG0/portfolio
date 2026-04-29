@@ -1,102 +1,49 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import starFooter from "../../public/StarFooter.svg";
+const StarSVG = () => (
+  <svg
+    style={{ height: "18px", width: "auto" }}
+    viewBox="0 0 74 86"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M36.0384 1.36948C36.3145 0.402057 37.6855 0.402061 37.9616 1.36949L45.3286 27.1834C45.4767 27.7024 46.0098 28.0102 46.5333 27.879L72.5723 21.352C73.5481 21.1074 74.2337 22.2947 73.5339 23.0175L54.8619 42.3044C54.4865 42.6922 54.4865 43.3078 54.8619 43.6956L73.5339 62.9825C74.2337 63.7053 73.5481 64.8926 72.5723 64.648L46.5333 58.121C46.0098 57.9898 45.4767 58.2976 45.3286 58.8166L37.9616 84.6305C37.6855 85.5979 36.3145 85.5979 36.0384 84.6305L28.6714 58.8166C28.5233 58.2976 27.9902 57.9898 27.4667 58.121L1.42772 64.648C0.451859 64.8926 -0.233654 63.7053 0.466117 62.9825L19.1381 43.6956C19.5135 43.3078 19.5135 42.6922 19.1381 42.3044L0.466114 23.0175C-0.233657 22.2947 0.451862 21.1074 1.42772 21.352L27.4667 27.879C27.9902 28.0102 28.5233 27.7024 28.6714 27.1834L36.0384 1.36948Z"
+      fill="currentColor"
+    />
+  </svg>
+);
 
 export default function Footer() {
-  function scrollToId(id: string) {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  }
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="relative grid grid-cols-1 sm:grid-cols-3 w-full h-auto sm:h-[180px] px-6 sm:px-[90px] py-8 sm:py-[15px] mt-10 sm:mt-[90px] gap-8 sm:gap-0 rounded-t-[20px] sm:rounded-t-[30px] border-t border-white/[0.08] bg-bg/60 backdrop-blur-md z-40">
-      {/* Sections + Contact */}
-      <div className="flex flex-row justify-center sm:justify-start items-start gap-12 sm:gap-16">
-        {/* Sections */}
-        <div className="text-center sm:text-left">
-          <h3 className="font-titles text-lg sm:text-xl font-medium tracking-wide text-white pb-3">
-            Sections
-          </h3>
-          <ul className="flex flex-col gap-2">
-            <li>
-              <button
-                onClick={() => scrollToId("AboutMe")}
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                About Me
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToId("Skills")}
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                My Skills
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => scrollToId("Work")}
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                My Work
-              </button>
-            </li>
-          </ul>
+    <footer>
+      <div className="footer-inner">
+        <div className="footer-id">
+          <StarSVG />
         </div>
-
-        {/* Contact */}
-        <div className="text-center sm:text-left">
-          <h3 className="font-titles text-lg sm:text-xl font-medium tracking-wide text-white pb-3">
-            Contact Me
-          </h3>
-          <ul className="flex flex-col gap-2">
-            <li>
-              <a
-                href="mailto:gabriel.bgs00@gmail.com"
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                Email
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/gabrielbgutierrez/"
-                target="_blank"
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/GabrielBG0"
-                target="_blank"
-                className="text-white hover:text-white/80 text-sm sm:text-base hover:translate-x-1 transition-all duration-300"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
+        <div className="footer-mid">
+          Gabriel Gutierrez, PhD Candidate at Unicamp
         </div>
-      </div>
-
-      {/* Logo */}
-      <div
-        className="flex justify-center items-center group cursor-pointer h-full"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <Image
-          src={starFooter}
-          alt="logo"
-          className="w-12 h-12 sm:w-16 sm:h-16 opacity-70 group-hover:opacity-100 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500"
-        />
-      </div>
-
-      {/* Copyright */}
-      <div className="flex justify-center sm:justify-end items-end sm:items-center font-titles text-xs sm:text-sm text-white/40 text-center sm:text-right pb-4 sm:pb-0">
-        © {new Date().getFullYear()} — Gabriel Gutierrez
+        <div
+          className="footer-right"
+          style={{ display: "flex", alignItems: "center", gap: "6px" }}
+        >
+          Weakly Supervised Learning · Open Source · {year}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
+          </svg>
+        </div>
       </div>
     </footer>
   );
