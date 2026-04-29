@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gabriel Gutierrez | Links",
   description:
-    "All of Gabriel Gutierrez's links — portfolio, research, social profiles, and more.",
+    "All of Gabriel Gutierrez's links: portfolio, research, social profiles, and more.",
 };
 
 const StarSVG = ({ className }: { className?: string }) => (
@@ -73,7 +73,7 @@ export default function LinksPage() {
         </div>
 
         <div className="links-subtitle">
-          <span>PhD Candidate — Computer Science</span>
+          <span>PhD Candidate in Computer Science</span>
           <span>Unicamp · Campinas, BR</span>
         </div>
 

@@ -22,7 +22,7 @@ export default function Footer() {
           <StarSVG />
         </div>
         <div className="footer-mid">
-          Gabriel Gutierrez — PhD Candidate, Unicamp
+          Gabriel Gutierrez, PhD Candidate at Unicamp
         </div>
         <div
           className="footer-right"

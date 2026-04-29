@@ -19,7 +19,7 @@ export default function Header() {
         <a href="#hero" className="nav-id" aria-label="Go to top">
           <StarSVG className="nav-star" aria-hidden="true" />
         </a>
-        <div className="nav-center">PhD Candidate in CS — Unicamp</div>
+        <div className="nav-center">PhD Candidate in CS, Unicamp</div>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>

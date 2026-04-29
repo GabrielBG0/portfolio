@@ -24,7 +24,7 @@ export default function Home() {
                   <span className="name-last">Gutierrez</span>
                 </div>
                 <p className="hero-tagline">
-                  Making computer vision work in the real world —<br />
+                  Making computer vision work in the real world,<br />
                   where <strong>labels are noisy</strong>, annotations are
                   scarce,
                   <br />
@@ -122,7 +122,7 @@ export default function Home() {
                   I&apos;m a{" "}
                   <strong>PhD candidate in Computer Science at Unicamp</strong>{" "}
                   and a software engineer by training. The two things I do most
-                  seriously are research and engineering — in my work
+                  seriously are research and engineering. In my work
                   they&apos;re deeply intertwined rather than separate tracks.
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function Home() {
                 <div className="about-row-label">Research focus</div>
                 <div className="about-row-text">
                   I study{" "}
-                  <strong>weakly supervised semantic segmentation</strong> —
+                  <strong>weakly supervised semantic segmentation</strong>,
                   teaching computer vision models to understand images without
                   painstaking pixel-level annotation. Real-world labels are
                   expensive and imprecise, so I focus on methods that learn from{" "}
@@ -148,7 +148,7 @@ export default function Home() {
                   <code>ViT</code>, <code>SegFormer</code>, <code>SETR</code>,{" "}
                   <code>MiT</code>, <code>BERT</code>) and CNN-based models (
                   <code>DeepLab</code>, <code>U-Net</code>). My engineering
-                  background means I approach research with a systems mindset —
+                  background means I approach research with a systems mindset,
                   and my research means I build tools shaped by real scientific
                   needs, not abstract requirements.
                 </div>
@@ -173,7 +173,7 @@ export default function Home() {
                   </h3>
                   <p className="research-desc">
                     PhD research on training segmentation models under weak
-                    supervision — when ground truth annotations are noisy,
+                    supervision, when ground truth annotations are noisy,
                     incomplete, or generated automatically. Current focus on
                     pseudo-label generation and refinement strategies that allow
                     better use of scarce labeled data without sacrificing model
@@ -197,7 +197,7 @@ export default function Home() {
                   </h3>
                   <p className="research-desc">
                     A systematic comparison of transformer-based segmentation
-                    architectures applied to seismic facies data — bridging
+                    architectures applied to seismic facies data, bridging
                     state-of-the-art vision models and the practical demands of
                     geoscientific interpretation. The study addresses model
                     performance and the inherent ambiguity of expert annotation
@@ -210,7 +210,7 @@ export default function Home() {
                     <span className="tag">Geoscience</span>
                   </div>
                   <div className="pub-line">
-                    Published — <em>Geophysical Prospecting</em> (peer-reviewed)
+                    Published in <em>Geophysical Prospecting</em> (peer-reviewed)
                     <br />
                     Presented at the{" "}
                     <strong>85th EAGE Annual Conference</strong>
@@ -229,7 +229,7 @@ export default function Home() {
                     Two years as a junior researcher applying transformer-based
                     NLP to automated misinformation detection. This was where I
                     first got serious about machine learning and established the
-                    methodological foundation — from supervised NLP to the
+                    methodological foundation, from supervised NLP to the
                     weakly supervised vision work that followed.
                   </p>
                   <div className="tag-row">
@@ -258,28 +258,30 @@ export default function Home() {
                   Software Architect &amp; Core Maintainer
                 </span>
                 <div className="minerva-title">
-                  An ML training framework built for researchers.
+                  Training infrastructure for researchers who need
+                  reproducibility.
                 </div>
                 <div className="minerva-body">
                   <p>
-                    <strong>Minerva</strong> is an open-source machine learning
-                    training framework built at Discovery Unicamp. I lead its
-                    architecture and am one of its core developers and
-                    maintainers — it&apos;s where my engineering and research
-                    instincts converge most directly.
+                    <strong>Minerva</strong> fills the gap between raw PyTorch
+                    and production MLOps, the space where researchers burn time
+                    on glue code. Concrete, opinionated classes so experiments
+                    can be built and reproduced, not assembled from scratch each
+                    time.
                   </p>
                   <p>
-                    The framework is built to serve researchers: flexible and
-                    modular, with integrations for tools like{" "}
-                    <strong>PyTorch Lightning</strong>. My role is to bridge
-                    research ideas and production-quality code — making the
-                    engineering rigorous enough that the science can be trusted.
+                    The architecture is layered: readers, datasets, data
+                    modules, and pipelines, each with a defined contract to extend.
+                    The standout decision is <strong>FromPretrained</strong>:
+                    Minerva wraps messy SSL checkpoint transfer into a
+                    constructor-compatible class with regex filters and a rename
+                    map, composing cleanly with YAML configs.
                   </p>
                   <p>
-                    Engineering for science is a different discipline than
-                    engineering for products. Reproducibility, configurability,
-                    and trust matter more than throughput. Minerva is an attempt
-                    to take that seriously.
+                    Aimed at graduate researchers in applied deep learning:
+                    time-series, computer vision, limited-label domains. Not a
+                    production platform. Engineering for science means
+                    reproducibility and honest defaults over throughput.
                   </p>
                 </div>
                 <div className="minerva-cta">
@@ -298,40 +300,41 @@ export default function Home() {
                   <div className="feature-item">
                     <div className="feature-n">01</div>
                     <div className="feature-text">
-                      <strong>Modular architecture</strong> — components can be
-                      mixed, extended, or replaced without restructuring the
-                      pipeline
+                      <strong>PyTorch Lightning foundation</strong> — structured
+                      training loops with researcher-first configurability and a
+                      clean path to evaluation pipelines
                     </div>
                   </div>
                   <div className="feature-item">
                     <div className="feature-n">02</div>
                     <div className="feature-text">
-                      <strong>PyTorch Lightning integration</strong> —
-                      structured training loops with researcher-first
-                      configurability
-                    </div>
-                  </div>
-                  <div className="feature-item">
-                    <div className="feature-n">03</div>
-                    <div className="feature-text">
-                      <strong>Built for real research needs</strong> — shaped by
-                      direct experience running experiments, not abstract
-                      requirements
+                      <strong>Layered composable architecture</strong> —
+                      readers, datasets, data modules, and pipelines each have
+                      defined contracts and base classes to extend
                     </div>
                   </div>
                   <div className="feature-item">
                     <div className="feature-n">04</div>
                     <div className="feature-text">
-                      <strong>Open source at Discovery Unicamp</strong> —
-                      designed to be shared, contributed to, and built upon
+                      <strong>YAML-driven reproducibility</strong> — every
+                      parameter serializable; collaborators can reproduce any
+                      experiment with a single CLI command
                     </div>
                   </div>
                   <div className="feature-item">
                     <div className="feature-n">05</div>
                     <div className="feature-text">
-                      <strong>Reproducibility-first</strong> — engineering
-                      decisions made so experiments can be trusted, traced, and
-                      replicated
+                      <strong>SSL model catalog</strong> — LFR, TF-C, and
+                      SimCLR-style modules for representation learning on
+                      limited-label data
+                    </div>
+                  </div>
+                  <div className="feature-item">
+                    <div className="feature-n">03</div>
+                    <div className="feature-text">
+                      <strong>FromPretrained</strong> — composable checkpoint
+                      loading with regex filters and rename maps for clean
+                      transfer from SSL runs
                     </div>
                   </div>
                 </div>
