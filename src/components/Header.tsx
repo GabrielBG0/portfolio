@@ -1,114 +1,38 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import star from "../../public/StarHeader.svg";
+import { useTheme } from "@/components/ThemeProvider";
+
+const StarSVG = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 74 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M36.0384 1.36948C36.3145 0.402057 37.6855 0.402061 37.9616 1.36949L45.3286 27.1834C45.4767 27.7024 46.0098 28.0102 46.5333 27.879L72.5723 21.352C73.5481 21.1074 74.2337 22.2947 73.5339 23.0175L54.8619 42.3044C54.4865 42.6922 54.4865 43.3078 54.8619 43.6956L73.5339 62.9825C74.2337 63.7053 73.5481 64.8926 72.5723 64.648L46.5333 58.121C46.0098 57.9898 45.4767 58.2976 45.3286 58.8166L37.9616 84.6305C37.6855 85.5979 36.3145 85.5979 36.0384 84.6305L28.6714 58.8166C28.5233 58.2976 27.9902 57.9898 27.4667 58.121L1.42772 64.648C0.451859 64.8926 -0.233654 63.7053 0.466117 62.9825L19.1381 43.6956C19.5135 43.3078 19.5135 42.6922 19.1381 42.3044L0.466114 23.0175C-0.233657 22.2947 0.451862 21.1074 1.42772 21.352L27.4667 27.879C27.9902 28.0102 28.5233 27.7024 28.6714 27.1834L36.0384 1.36948Z"
+      fill="currentColor"
+    />
+  </svg>
+);
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  function scrollToId(id: string) {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false);
-  }
+  const { theme, toggle } = useTheme();
 
   return (
-    <header className="relative z-50">
-      <div className="flex justify-between items-center w-full h-[60px] md:h-[90px] px-6 md:px-[90px] py-3 md:py-[15px] mb-4 md:mb-[90px] rounded-b-[20px] sm:rounded-b-[30px] border-b border-white/[0.08] bg-bg/60 backdrop-blur-md">
-        {/* Logo + Name */}
-        <div
-          className="flex items-center group cursor-pointer"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          <Image
-            src={star}
-            alt="logo"
-            className="w-7 h-7 md:w-auto md:h-auto opacity-100 group-hover:rotate-[120deg] transition-all duration-500"
-          />
-          <h1 className="pl-2 md:pl-3 text-xl md:text-5xl font-header tracking-wider whitespace-nowrap text-white">
-            Gabriel Gutierrez
-          </h1>
-        </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center justify-end gap-8 lg:gap-[90px] font-titles text-xl lg:text-2xl text-center">
-          <button
-            onClick={() => scrollToId("AboutMe")}
-            className="text-white hover:text-white/80 hover:-translate-y-0.5 transition-all duration-300"
-          >
-            About Me
-          </button>
-          <button
-            onClick={() => scrollToId("Skills")}
-            className="text-white hover:text-white/80 hover:-translate-y-0.5 transition-all duration-300"
-          >
-            My Skills
-          </button>
-          <button
-            onClick={() => scrollToId("Work")}
-            className="text-white hover:text-white/80 hover:-translate-y-0.5 transition-all duration-300"
-          >
-            My Work
-          </button>
-        </nav>
-
-        {/* Mobile Hamburger Button */}
-        <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px]"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`}
-          />
-          <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`}
-          />
-          <span
-            className={`block w-6 h-[2px] bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
-          />
-        </button>
+    <nav>
+      <div className="nav-inner">
+        <a href="#hero" className="nav-id">
+          <StarSVG className="nav-star" />
+        </a>
+        <div className="nav-center">PhD Candidate in CS — Unicamp</div>
+        <ul className="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#minerva">Minerva</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button className="theme-toggle" onClick={toggle}>
+              {theme === "dark" ? "Light" : "Dark"}
+            </button>
+          </li>
+        </ul>
       </div>
-
-      {/* Mobile Menu Overlay */}
-      <div
-        className={`md:hidden fixed inset-0 z-40 bg-bg/95 backdrop-blur-md transition-all duration-300 ${
-          menuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col items-center justify-center h-full gap-10">
-          <button
-            onClick={() => scrollToId("AboutMe")}
-            className="font-titles text-3xl tracking-wider text-white/90 hover:text-white transition-colors"
-          >
-            About Me
-          </button>
-          <button
-            onClick={() => scrollToId("Skills")}
-            className="font-titles text-3xl tracking-wider text-white/90 hover:text-white transition-colors"
-          >
-            My Skills
-          </button>
-          <button
-            onClick={() => scrollToId("Work")}
-            className="font-titles text-3xl tracking-wider text-white/90 hover:text-white transition-colors"
-          >
-            My Work
-          </button>
-        </div>
-
-        {/* Close button */}
-        <button
-          className="absolute top-4 right-6 w-8 h-8 flex items-center justify-center"
-          onClick={() => setMenuOpen(false)}
-          aria-label="Close menu"
-        >
-          <span className="block w-6 h-[2px] bg-white rotate-45 absolute" />
-          <span className="block w-6 h-[2px] bg-white -rotate-45 absolute" />
-        </button>
-      </div>
-    </header>
+    </nav>
   );
 }

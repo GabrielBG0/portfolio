@@ -1,137 +1,103 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import star from "../../../public/StarHeader.svg";
-import {
-  Globe,
-  Linkedin,
-  Github,
-  GraduationCap,
-  PenLine,
-  Microscope,
-  Mail,
-  ChevronRight,
-  type LucideIcon,
-} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Gabriel Gutierrez | Links",
   description:
-    "All of Gabriel Gutierrez's important links in one place — portfolio, research, social profiles, and more.",
+    "All of Gabriel Gutierrez's links — portfolio, research, social profiles, and more.",
 };
 
-const links: { label: string; href: string; icon: LucideIcon }[] = [
+const StarSVG = ({ className }: { className?: string }) => (
+  <svg
+    className={className}
+    viewBox="0 0 74 86"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M36.0384 1.36948C36.3145 0.402057 37.6855 0.402061 37.9616 1.36949L45.3286 27.1834C45.4767 27.7024 46.0098 28.0102 46.5333 27.879L72.5723 21.352C73.5481 21.1074 74.2337 22.2947 73.5339 23.0175L54.8619 42.3044C54.4865 42.6922 54.4865 43.3078 54.8619 43.6956L73.5339 62.9825C74.2337 63.7053 73.5481 64.8926 72.5723 64.648L46.5333 58.121C46.0098 57.9898 45.4767 58.2976 45.3286 58.8166L37.9616 84.6305C37.6855 85.5979 36.3145 85.5979 36.0384 84.6305L28.6714 58.8166C28.5233 58.2976 27.9902 57.9898 27.4667 58.121L1.42772 64.648C0.451859 64.8926 -0.233654 63.7053 0.466117 62.9825L19.1381 43.6956C19.5135 43.3078 19.5135 42.6922 19.1381 42.3044L0.466114 23.0175C-0.233657 22.2947 0.451862 21.1074 1.42772 21.352L27.4667 27.879C27.9902 28.0102 28.5233 27.7024 28.6714 27.1834L36.0384 1.36948Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+const links: { label: string; value: string; href: string }[] = [
   {
     label: "Email",
-    href: "mailto:gabriel.gutierrez@ic.unicmap.br",
-    icon: Mail,
+    value: "gabriel.gutierrez@ic.unicamp.br",
+    href: "mailto:gabriel.gutierrez@ic.unicamp.br",
   },
   {
     label: "Portfolio",
+    value: "gabrielbg.dev",
     href: "/",
-    icon: Globe,
   },
   {
     label: "LinkedIn",
+    value: "gabrielbgutierrez",
     href: "https://www.linkedin.com/in/gabrielbgutierrez/",
-    icon: Linkedin,
   },
   {
     label: "GitHub",
+    value: "GabrielBG0",
     href: "https://github.com/GabrielBG0",
-    icon: Github,
   },
   {
-    label: "Google Scholar",
+    label: "Scholar",
+    value: "Google Scholar Profile",
     href: "https://scholar.google.com/citations?user=g6yM01cAAAAJ",
-    icon: GraduationCap,
   },
   {
-    label: "Research Blog",
+    label: "Blog",
+    value: "gabrielbg.dev",
     href: "https://www.gabrielbg.dev/",
-    icon: PenLine,
   },
   {
-    label: "Minerva Framework",
+    label: "Minerva",
+    value: "discovery-unicamp/Minerva",
     href: "https://github.com/discovery-unicamp/Minerva",
-    icon: Microscope,
   },
 ];
 
 export default function LinksPage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-5 sm:px-4 py-10 sm:py-12 relative overflow-hidden" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
-      {/* Animated background orbs */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 -left-32 w-[420px] h-[420px] rounded-full bg-purple-600/10 blur-[120px] animate-pulse" />
-        <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full bg-blue-500/10 blur-[140px] animate-pulse [animation-delay:2s]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-indigo-500/5 blur-[100px] animate-pulse [animation-delay:4s]" />
-      </div>
+    <main className="links-page">
+      <div className="links-card">
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center w-full max-w-[90%] sm:max-w-md">
-        {/* Avatar / Logo */}
-        <div className="mb-6 relative">
-          <div className="w-24 h-24 rounded-full border-2 border-white/20 bg-bg-secondary flex items-center justify-center shadow-[0_0_40px_rgba(139,92,246,0.15)]">
-            <Image
-              src={star}
-              alt="logo"
-              className="w-12 h-12"
-              priority
-            />
+        <div className="links-header">
+          <div className="links-eyebrow">DWG-002 / Links</div>
+          <StarSVG className="links-star" />
+          <div>
+            <span className="links-name-first">Gabriel</span>
+            <span className="links-name-last">Gutierrez</span>
           </div>
-          {/* Glow ring */}
-          <div className="absolute inset-0 w-24 h-24 rounded-full border border-white/5 animate-ping [animation-duration:3s]" />
         </div>
 
-        {/* Name */}
-        <h1 className="font-header text-3xl sm:text-4xl tracking-wider text-center mb-2">
-          Gabriel Gutierrez
-        </h1>
+        <div className="links-subtitle">
+          <span>PhD Candidate — Computer Science</span>
+          <span>Unicamp · Campinas, BR</span>
+        </div>
 
-        {/* Tagline */}
-        <p className="font-titles text-sm sm:text-base text-white/50 tracking-widest uppercase text-center mb-10">
-          Weakly Supervised Semantic Segmentation
-        </p>
-
-        {/* Links */}
-        <div className="flex flex-col gap-4 w-full">
+        <div className="links-rows">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              target={link.href.startsWith("/") ? "_self" : "_blank"}
-              rel={link.href.startsWith("/") ? undefined : "noopener noreferrer"}
-              id={`link-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
-              className="group relative flex items-center gap-3 sm:gap-4 w-full px-4 sm:px-6 py-3.5 sm:py-4 rounded-2xl
-                         bg-white/[0.04] border border-white/[0.08]
-                         backdrop-blur-md
-                         transition-all duration-300 ease-out
-                         hover:bg-white/[0.08] hover:border-white/[0.16]
-                         hover:shadow-[0_0_30px_rgba(139,92,246,0.1)]
-                         hover:scale-[1.02]
-                         active:scale-[0.98]"
+              target={link.href.startsWith("/") || link.href.startsWith("mailto") ? "_self" : "_blank"}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              className="contact-link-row"
             >
-              {/* Icon */}
-              <link.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white/70 transition-transform duration-300 group-hover:scale-110 group-hover:text-white" strokeWidth={1.5} />
-
-              {/* Label */}
-              <span className="font-titles text-base sm:text-lg tracking-wide text-white/90 group-hover:text-white transition-colors duration-300">
-                {link.label}
-              </span>
-
-              {/* Arrow */}
-              <ChevronRight className="ml-auto w-4 h-4 text-white/30 group-hover:text-white/70 transition-all duration-300 group-hover:translate-x-1" strokeWidth={1.5} />
-
-              {/* Hover shimmer */}
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-r from-transparent via-white/[0.03] to-transparent" />
+              <span className="cl-label">{link.label}</span>
+              <span className="cl-value">{link.value}</span>
+              <span className="cl-arrow">→</span>
             </a>
           ))}
         </div>
 
-        {/* Footer */}
-        <p className="mt-12 text-xs text-white/25 font-titles tracking-wider">
-          © {new Date().getFullYear()} — Gabriel Gutierrez
-        </p>
+        <div className="links-footer-bar">
+          <StarSVG className="links-footer-star" />
+          <span>gabrielbg.dev · {new Date().getFullYear()}</span>
+        </div>
+
       </div>
     </main>
   );
