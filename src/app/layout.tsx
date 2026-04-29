@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/ThemeProvider";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -31,11 +30,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${spaceMono.variable}`}
+      className={`no-js ${spaceGrotesk.variable} ${spaceMono.variable}`}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+      <head>
+        {/* Restore theme before first paint to avoid flash */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('theme-light')}catch(e){}`,
+          }}
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export function RevealObserver() {
   useEffect(() => {
-    const els = document.querySelectorAll(".reveal");
+    document.documentElement.classList.remove("no-js");
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -15,7 +15,9 @@ export function RevealObserver() {
       },
       { threshold: 0.07 }
     );
-    els.forEach((el) => obs.observe(el));
+
+    document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+
     return () => obs.disconnect();
   }, []);
   return null;

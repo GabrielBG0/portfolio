@@ -1,54 +1,3 @@
-/* ── NEBULA SANS — kept for /links page ─────────────────────── */
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Book.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nebula Sans";
-  src: url("/fonts/NebulaSans-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,7 +9,7 @@
   --bg-3: #1f1e1c;
   --fg:   #f0ebe2;
   --fg-2: rgba(240,235,226,0.50);
-  --fg-3: rgba(240,235,226,0.22);
+  --fg-3: rgba(240,235,226,0.50);
   --fg-4: rgba(240,235,226,0.09);
   --rule: rgba(240,235,226,0.09);
 
@@ -74,7 +23,7 @@
   --bg-3: #e2ddd4;
   --fg:   #131110;
   --fg-2: rgba(19,17,16,0.50);
-  --fg-3: rgba(19,17,16,0.28);
+  --fg-3: rgba(19,17,16,0.58);
   --fg-4: rgba(19,17,16,0.08);
   --rule: rgba(19,17,16,0.09);
 }
@@ -637,6 +586,19 @@ footer {
 .reveal-d1 { transition-delay: 0.08s; }
 .reveal-d2 { transition-delay: 0.16s; }
 .reveal-d3 { transition-delay: 0.24s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+}
 
 /* ── LINKS PAGE ─────────────────────────────────────────────── */
 .links-page {
