@@ -38,7 +38,7 @@ export default function Home() {
                 >
                   Get in touch
                 </a>
-                <a href="https://mqgno3fpjl.ufs.sh/f/yjUPHnZjk2GScRBOmVQfDiZXCHU0uYGoS1bpVWl8OtgwMdsT" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                <a href="https://mqgno3fpjl.ufs.sh/f/yjUPHnZjk2GS46zC2YypQCaODXyiNmGhFMj5U94WYk0tZSIc" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                   Download CV ↗
                 </a>
               </div>
@@ -412,7 +412,7 @@ export default function Home() {
                   and interesting problems.
                 </p>
                 <div>
-                  <a href="https://mqgno3fpjl.ufs.sh/f/yjUPHnZjk2GScRBOmVQfDiZXCHU0uYGoS1bpVWl8OtgwMdsT" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mqgno3fpjl.ufs.sh/f/yjUPHnZjk2GS46zC2YypQCaODXyiNmGhFMj5U94WYk0tZSIc" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                     Download CV ↗
                   </a>
                 </div>
